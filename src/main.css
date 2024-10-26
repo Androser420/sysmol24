@@ -284,6 +284,11 @@ ul {
     border-top-right-radius: calc(var(--panel-roundness) /1.5);
 }
 
+[class^='panels_']>[id='vc-spotify-player']::after {
+    border-top-left-radius: var(--panel-roundness);
+    border-top-right-radius: var(--panel-roundness);
+}
+
 /* misc changes for system24 */
 .vc-spotify-time-left,
 .vc-spotify-time-right {

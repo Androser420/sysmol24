@@ -51,9 +51,7 @@
     content: 'dms / gcs';
 }
 
-/* reduce search bar input area by half*/
-.open_a46bef .searchBar_a46bef,
-.focused_a46bef .searchBar_a46bef {
+[class*='search_']>[class^='searchBar_'] {
     width: 120px;
 }
 

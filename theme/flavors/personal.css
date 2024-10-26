@@ -50,3 +50,9 @@
 [class^=sidebar_]:hover [class^='privateChannels_']::after {
     content: 'dms / gcs';
 }
+
+/* reduce search bar input area by half*/
+.open_a46bef .searchBar_a46bef,
+.focused_a46bef .searchBar_a46bef {
+    width: 120px;
+}

@@ -306,12 +306,6 @@ html.theme-light {
     }
 }
 
-/* reduce search bar input area by half*/
-.open_a46bef .searchBar_a46bef,
-.focused_a46bef .searchBar_a46bef {
-    width: 120px;
-}
-
 /* MemberCount support (very basic/bad)
 im not sure how to make this work while hovering over server navigation tab cuz using the guilds class and hover property doesnt work */
 [class*='vc-membercount-widget'] {

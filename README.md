@@ -20,7 +20,7 @@ a tui-style discord theme that combines [system24](https://github.com/refact0r/s
 
 1. add `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css` to your theme import links.
 
-### flavors
+## flavors
 other customized variants of the system24 theme will be added soon.  
 meanwhile check out my own flavor if you want!
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal.css`

@@ -254,6 +254,36 @@
     content: 'server';
 }
 
+/* rounding fixes */
+[class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
+    &>[class^="button_"] {
+        transform: scale(0.5);
+    }
+
+    & [class^="contents"]>[class^="lottieIcon_"] {
+        transform: scale(2);
+    }
+}
+
+ul {
+    [class^='footer'] {
+        background: transparent
+    }
+
+    [class^='gradient'] {
+        background: var(--bg-overlay-app-frame, var(--background-tertiary))
+    }
+}
+
+[class^='userPanelInner_'] {
+    border-radius: var(--panel-roundness);
+}
+
+[class^='animatedContainer_'] {
+    border-top-left-radius: calc(var(--panel-roundness) /1.5);
+    border-top-right-radius: calc(var(--panel-roundness) /1.5);
+}
+
 /* misc changes for system24 */
 .vc-spotify-time-left,
 .vc-spotify-time-right {

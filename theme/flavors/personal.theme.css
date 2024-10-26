@@ -70,3 +70,13 @@
         background-color: var(--background-modifier-hover)
     }
 }
+
+/* unseperate app button */
+[class^='channelAppLauncher_']>[class^='buttonContainer_'] {
+    border-left: 0;
+}
+
+[class^='form_']>[class^="channelBottomBarArea_"]>[class^='channelTextArea_']>[class^="scrollableContainer_"] {
+    overflow-y: hidden;
+    border-radius: 0;
+}

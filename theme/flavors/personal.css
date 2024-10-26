@@ -56,3 +56,17 @@
 .focused_a46bef .searchBar_a46bef {
     width: 120px;
 }
+
+/* fix DecodeBase64 icon color */
+[aria-label*="Base64"] {
+    svg {
+        path {
+            stroke: var(--interactive-normal);
+        }
+    }
+
+    &:hover svg path {
+        stroke: var(--interactive-hover);
+        background-color: var(--background-modifier-hover)
+    }
+}

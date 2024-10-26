@@ -161,6 +161,7 @@
 
 [class^=membersWrap_] {
     min-width: 0;
+    padding-top: unset;
 
     &,
     >[class^=members_] {
@@ -352,7 +353,7 @@ im not sure how to make this work while hovering over server navigation tab cuz 
 
 [class*='vc-membercount-member-list'] {
     justify-content: center;
-    margin-top: 0.5em;
+    margin-top: 1em;
     margin-bottom: -0.5em;
     padding-inline: 2em;
 }
@@ -360,6 +361,7 @@ im not sure how to make this work while hovering over server navigation tab cuz 
 [class*='vc-membercount-online-dot'],
 [class*='vc-membercount-total-dot'] {
     display: none !important;
+    margin-right: 0.25em;
 }
 
 [class^=members_]:hover [class*='vc-membercount-widget'] {

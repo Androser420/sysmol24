@@ -1,3 +1,8 @@
 :root {
   --custom-channel-textarea-text-area-height: 44px;
+  --profile-width: 320px;
+}
+
+[class^='userPanelOuter_'] {
+    padding: 4px;
 }

@@ -14,7 +14,7 @@ a tui-style discord theme that combines [system24](https://github.com/refact0r/s
 2. click the download button in the top right.
 3. move the downloaded file into your theme folder. (there should be a button to open the theme folder in theme settings)
 4. you may need to enable the theme in your theme settings by clicking a toggle switch.
-5. (optional) customize the theme by editing the variables in `sysmol24.theme.css`.
+5. (optional) customize the theme by copying and editing the root variables from `/src/main.css` to your `sysmol24.theme.css`.
 
 ### install through link
 
@@ -23,4 +23,4 @@ a tui-style discord theme that combines [system24](https://github.com/refact0r/s
 ## flavors
 other customized variants of the system24 theme will be added soon.  
 meanwhile check out my own flavor if you want!
-- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal.css`
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal.theme.css`

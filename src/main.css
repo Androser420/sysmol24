@@ -277,7 +277,7 @@ ul {
 }
 
 [class^='userPanelInner_'] {
-    border-radius: var(--panel-roundness);
+    border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
 }
 
 [class^='animatedContainer_'] {

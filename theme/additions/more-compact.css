@@ -5,4 +5,5 @@
 
 [class^='userPanelOuter_'] {
     padding: 4px;
+    --txt-pad: 4px;
 }

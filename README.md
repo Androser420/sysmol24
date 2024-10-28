@@ -26,10 +26,11 @@ meanwhile check out my own flavor if you want!
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal.theme.css`
 
 ### modules
-you can now spice up your theme/flavor with add-ons inside the `/theme/modules` folder!  
-if you've picked one you like, simply insert it to the top of the code as usual.  
+you can now spice up your flavor with add-ons inside the `/theme/modules` folder!  
+if you've picked one you like, simply insert them as usual.  
 - e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css');`
+- *or just install it through the link itself*
 
 ---
 
-More to come, pull requests are very appreciated!
+More to come, suggestions and pull requests are very appreciated!

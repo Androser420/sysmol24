@@ -1,0 +1,47 @@
+/**
+ * @name extra collapsible | sysmol24
+ * @description a Float theme inspired module that removes certain panels when app window size shrinks.
+*/
+
+/* titlebar */
+@media (max-height: 600px) {
+    [class^="chat_"] [class^=subtitleContainer_] {
+        display: none;
+    }
+}
+
+/* server list */
+@media (max-width: 880px) {
+    [class*='guilds_'] {
+        display: none;
+    }
+
+    [class^=base_]>[class^=content_]>[class^=sidebar_] {
+        margin-left: var(--pad);
+    }
+}
+
+/* + sidebar */
+@media (max-width: 760px) {
+    [class*='guilds_'],
+    [class^=base_]>[class^=content_]>[class^=sidebar_] {
+        display: none;
+    }
+
+    [class^="base"] [class^=chat_] {
+        margin-left: var(--pad);
+    }
+}
+
+/* + member list */
+@media (max-width: 640px) {
+    [class*='guilds_'],
+    [class^=base_]>[class^=content_]>[class^=sidebar_],
+    [class^="membersWrap_"] {
+        display: none;
+    }
+
+    [class^="base"] [class^=chat_] {
+        margin-left: var(--pad);
+    }
+}

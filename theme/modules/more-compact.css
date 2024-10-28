@@ -1,3 +1,8 @@
+/**
+ * @name compact | sysmol24
+ * @description a module that makes the theme more compact.
+*/
+
 :root {
   --custom-channel-textarea-text-area-height: 44px;
   --profile-width: 320px;

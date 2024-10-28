@@ -25,10 +25,10 @@ other customized variants of the system24 theme will be added soon.
 meanwhile check out my own flavor if you want!
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal.theme.css`
 
-### additions
-you can now spice up your theme/flavor with add-ons inside the `/theme/additions` folder!  
+### modules
+you can now spice up your theme/flavor with add-ons inside the `/theme/modules` folder!  
 if you've picked one you like, simply insert it to the top of the code as usual.  
-- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/additions/more-compact.css');`
+- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css');`
 
 ---
 

@@ -214,7 +214,9 @@
 
     [class^=members],
     >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
-    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_] {
+    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
+    [class^='messagesWrapper_'] [class^=scroller_],
+    [class^='content_'] [class^='wrapper_'] [class^='callContainer_']{
         border-radius: var(--panel-roundness);
     }
 }
@@ -315,10 +317,6 @@ ul {
         0 1px 0 var(--txt-dark),
         -1px 1px 0 var(--txt-dark),
         -1px 0 0 var(--txt-dark);
-}
-
-[class^='messagesWrapper_'] [class^=scroller_] {
-    border-radius: var(--panel-roundness);
 }
 
 [class*='guilds_'] [class^='scroller_'],

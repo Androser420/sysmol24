@@ -20,12 +20,12 @@
 
 :has(.replyBar_b11c5e) :has(.channelAttachmentArea_e8c527) [class^="channelAppLauncher_"],
 :has(.replyBar_b11c5e) :not(:has(.channelAttachmentArea_e8c527)) [class^="channelAppLauncher_"] {
-    background: linear-gradient(to bottom, var(--background-secondary) 37px, var(--background-primary) 37px);
+    background: linear-gradient(to bottom, var(--background-secondary) 35px, var(--background-primary) 35px);
     border-bottom-right-radius: var(--panel-roundness);
     border-top-right-radius: var(--panel-roundness);
 
     &>[class^='buttonContainer_'] {
-        margin-top: 37px;
+        margin-top: 35px;
         background: transparent;
         border-bottom-right-radius: var(--panel-roundness);
     }
@@ -65,4 +65,8 @@
 
 .text_b11c5e {
     margin-left: 0;
+}
+
+.mentionButton_b11c5e {
+    padding: 0px 12px;
 }

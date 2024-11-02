@@ -287,6 +287,7 @@ ul {
     border-top-right-radius: calc(var(--panel-roundness) /1.5);
 }
 
+[class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'],
 [class^='panels_']>[id='vc-spotify-player']::after {
     border-top-left-radius: var(--panel-roundness);
     border-top-right-radius: var(--panel-roundness);
@@ -346,6 +347,10 @@ ul {
 html.theme-light {
     --scrollbar-thin-thumb: display: none;
     --scrollbar-thin-track: display: none;
+}
+
+[class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'] {
+    padding-bottom: 8px;
 }
 
 /* fix event tab */

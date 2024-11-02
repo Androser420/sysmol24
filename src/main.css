@@ -293,6 +293,11 @@ ul {
     border-top-right-radius: var(--panel-roundness);
 }
 
+:has([class^='panels_']>[class^='wrapper']) [id='vc-spotify-player']::after {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
 [class^='form_'] [class^='typing_'] {
     border: transparent;
     background: transparent;

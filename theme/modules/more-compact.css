@@ -9,8 +9,8 @@
 }
 
 [class^='userPanelOuter_'] {
-    padding: 4px;
-    --txt-pad: 4px;
+    padding: 3px;
+    --txt-pad: 3px;
 }
 
 /* hide cooldown text (remove if you want it back) */

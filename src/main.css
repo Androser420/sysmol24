@@ -293,7 +293,7 @@ ul {
     border-top-right-radius: var(--panel-roundness);
 }
 
-:has([class^='panels_']>[class^='wrapper']) [id='vc-spotify-player']::after {
+:has([class^='panels_']>[class^='wrapper'] [class*='connection_']) [id='vc-spotify-player']::after {
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
 }

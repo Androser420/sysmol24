@@ -12,3 +12,10 @@
     padding: 4px;
     --txt-pad: 4px;
 }
+
+/* hide cooldown text (remove if you want it back) */
+[class^='chatContent_'] {
+    & [class^='jumpToPresentBar_'] [class^="barButtonMain_"] {
+        display: none !important;
+    }
+}

@@ -57,10 +57,3 @@
         bottom: 36px;
     }
 }
-
-/* hide cooldown text (remove if you want it back) */
-[class^='chatContent_'] {
-    & [class^='jumpToPresentBar_'] [class^="barButtonMain_"] {
-        display: none !important;
-    }
-}

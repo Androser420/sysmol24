@@ -210,17 +210,6 @@
     }
 }
 
-[class^="base"] {
-
-    [class^=members],
-    >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
-    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
-    [class^='messagesWrapper_'] [class^=scroller_],
-    [class^='content_'] [class^='wrapper_'] [class^='callContainer_']{
-        border-radius: var(--panel-roundness);
-    }
-}
-
 [class*="sidebar_"] [class*="panels"] [type*="button"],
 [class*="sidebar_"] [id='vc-spotify-progress-bar'] [aria-label="Total Duration"] {
     display: none;
@@ -258,6 +247,17 @@
 }
 
 /* rounding fixes */
+[class^="base"] {
+    [class^=members],
+    >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
+    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
+    [class^='messagesWrapper_'] [class^=scroller_],
+    [class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
+    [class^='nowPlayingColumn_']>[class^='container_']{
+        border-radius: var(--panel-roundness);
+    }
+}
+
 [class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
     &>[class^="button_"] {
         transform: scale(0.5);
@@ -310,6 +310,11 @@ ul {
     [class^='cooldownWrapper_'] {
         margin-right: calc(var(--panel-roundness) /2)
     }
+}
+
+[class^='nowPlayingColumn_']>[class^='container_'] [class^='scroller_'] {
+    border-left: 0;
+    margin-left: 0;
 }
 
 /* added some outline and shadow to user typing text because the bg is transparent for now */

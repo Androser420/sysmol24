@@ -4,33 +4,32 @@
 */
 
 :has([class^='form_'] [class^='typing_']) [class^='channelBottomBarArea_'] {
-  margin-top: 0;
+  margin-top: -3px;
 }
 
 [class^='form_'] [class^='typing_'] {
   border: 0;
-  margin-top: -8px;
+  margin-top: -5px;
   width: 50%;
   border-radius: var(--panel-roundness);
   position: relative;
   align-self: center;
   background: var(--bg-2);
-  transition: width 0.3s ease, background .5s ease, opacity .3s;
+  transition: width .3s ease, background .3s ease, opacity .3s;
 
   &>[class^='cooldownWrapper_'] {
     flex-direction: row-reverse;
   }
 
   &>[class^='cooldownWrapper_']>[class^='slowModeIcon_'] {
-    margin-left: 0;
-    margin-right: 4px;
+    margin: 0 4px;
   }
 
   &:hover {
     width: 85%;
     background: color-mix(in oklch, var(--bg-2), transparent 50%);
     backdrop-filter: blur(3px);
-    transition: width 0.3s ease, background .5s ease, opacity .3s;
+    transition: width .3s ease, background .3s ease, opacity .3s;
   }
 }
 

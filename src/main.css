@@ -317,7 +317,9 @@ html.theme-light {
 }
 
 /* fix event tab */
-[class^=base]>[class^=content]>[class^=sidebar]>[class^=container]>[class^=container]>[class^=channelNotice] {
+[class^=sidebar]>[class^=container] [class^=channelNotice] {
+
+  >[class*=singleLine_]>[class^=stageIcon],
   >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
     display: none;
   }
@@ -329,18 +331,12 @@ html.theme-light {
   >[class*=singleLine_] {
     white-space: wrap;
   }
-
-  >[class*=singleLine_]>[class^=stageIcon] {
-    display: none;
-  }
 }
 
-[class^=base]>[class^=content]>[class^=sidebar]:hover>[class^=container]>[class^=container]>[class^=channelNotice] {
-  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
-    display: block;
-  }
+[class^=sidebar]:hover>[class^=container] [class^=channelNotice] {
 
-  >[class*=singleLine_]>[class^=stageIcon] {
+  >[class*=singleLine_]>[class^=stageIcon],
+  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
     display: block;
   }
 }

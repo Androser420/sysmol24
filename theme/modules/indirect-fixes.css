@@ -102,15 +102,14 @@
 
 [class*='vc-membercount-member-list'] {
   justify-content: center;
-  margin-top: 1em;
-  margin-bottom: -0.5em;
+  margin: 1em 0 -.5em !important;
   padding-inline: 2em;
 }
 
 [class*='vc-membercount-online-dot'],
 [class*='vc-membercount-total-dot'] {
   display: none !important;
-  margin-right: 0.25em;
+  margin-right: .25em;
 }
 
 [class^=members_]:hover [class*='vc-membercount-widget'] {

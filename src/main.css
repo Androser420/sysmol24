@@ -175,12 +175,16 @@
   }
 }
 
-[class^='userPanelOuter_'] {
+[class^='base'] [class^='content_']>[class^='outer_'] {
   width: var(--collapsed-profile-width);
   transition: width ease 0.25s;
+
+  >[class^='inner_'] {
+    border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
+  }
 }
 
-[class^='userPanelOuter_']:hover {
+[class^='base'] [class^='content_']>[class^='outer_']:hover {
   width: var(--profile-width);
 }
 
@@ -230,22 +234,6 @@
   margin-left: 20%;
 }
 
-[class^='membersWrap_']::after {
-  content: 'mem…';
-}
-
-[class^='membersWrap_']:hover::after {
-  content: 'members';
-}
-
-[class^='sidebar_']>[class^='container_']::after {
-  content: 'ser…';
-}
-
-[class^='sidebar_']:hover>[class^='container_']::after {
-  content: 'server';
-}
-
 /* rounding fixes */
 [class^="base"] {
 
@@ -259,16 +247,6 @@
   }
 }
 
-[class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
-  &>[class^="button_"] {
-    transform: scale(0.5);
-  }
-
-  & [class^="contents"]>[class^="lottieIcon_"] {
-    transform: scale(2);
-  }
-}
-
 ul {
   [class^='footer'] {
     background: transparent
@@ -277,10 +255,6 @@ ul {
   [class^='gradient'] {
     background: var(--bg-overlay-app-frame, var(--background-tertiary))
   }
-}
-
-[class^='userPanelInner_'] {
-  border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
 }
 
 [class^='animatedContainer_'] {
@@ -328,7 +302,7 @@ ul {
 }
 
 #vc-spotify-info-wrapper img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .theme-dark,

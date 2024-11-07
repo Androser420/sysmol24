@@ -3,6 +3,34 @@
  * @description various workaround fixes for sysmol24.
 */
 
+/* system24 related changes */
+[class^='membersWrap_']::after {
+  content: 'mem…';
+}
+
+[class^='membersWrap_']:hover::after {
+  content: 'members';
+}
+
+[class^='sidebar_']>[class^='container_']::after {
+  content: 'ser…';
+}
+
+[class^='sidebar_']:hover>[class^='container_']::after {
+  content: 'server';
+}
+
+/* fix app button rounding */
+[class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
+  &>[class^="button_"] {
+    transform: scale(0.5);
+  }
+
+  & [class^="contents"]>[class^="lottieIcon_"] {
+    transform: scale(2);
+  }
+}
+
 /* collapsible Friends tab */
 [class^='peopleColumn_'],
 [class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {

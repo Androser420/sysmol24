@@ -8,7 +8,7 @@
   --profile-width: 320px;
 }
 
-[class^='userPanelOuter_'] {
+[class^='base'] [class^='content_']>[class^='outer_'] {
   padding: 3px;
   --txt-pad: 3px;
 }

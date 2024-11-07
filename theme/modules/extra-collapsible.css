@@ -28,6 +28,7 @@
     display: none
   }
 
+  [class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"],
   [class^="base"] [class^=chat_] {
     margin-left: var(--pad)
   }

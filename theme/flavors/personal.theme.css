@@ -13,6 +13,9 @@
 
 /* modules */
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css");
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/chat-indicators.css");
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/more-compact.css");
 
 [class*="sidebar_"] [id='vc-spotify-progress-bar'] [class^='bar_'] [class^='barFill_'] {
   opacity: 75%;

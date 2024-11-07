@@ -9,13 +9,13 @@
 }
 
 [class^='userPanelOuter_'] {
-    padding: 3px;
-    --txt-pad: 3px;
+  padding: 3px;
+  --txt-pad: 3px;
 }
 
 /* hide cooldown text (remove if you want it back) */
 [class^='chatContent_'] {
-    & [class^='jumpToPresentBar_'] [class^="barButtonMain_"] {
-        display: none !important;
-    }
+  & [class^='jumpToPresentBar_'] [class^="barButtonMain_"] {
+    display: none !important;
+  }
 }

@@ -2,365 +2,366 @@
 
 /* customize things here */
 :root {
-    --font: 'DM Mono';
-    /* UI font name. it must be installed on your system. */
-    letter-spacing: -0.05ch;
-    /* decreases letter spacing for better readability. */
-    font-weight: 300;
-    /* UI font weight. */
-    --label-font-weight: 500;
-    /* font weight for panel labels. */
-    --corner-text: 'sysmol24';
-    /* custom text to display in the corner. only works on windows. */
-    --pad: 16px;
-    /* padding between panels. */
-    --txt-pad: 10px;
-    /* padding inside panels to prevent labels from clipping */
-    --panel-roundness: 0px;
-    /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
+  --font: 'DM Mono';
+  /* UI font name. it must be installed on your system. */
+  letter-spacing: -0.05ch;
+  /* decreases letter spacing for better readability. */
+  font-weight: 300;
+  /* UI font weight. */
+  --label-font-weight: 500;
+  /* font weight for panel labels. */
+  --corner-text: 'sysmol24';
+  /* custom text to display in the corner. only works on windows. */
+  --pad: 16px;
+  /* padding between panels. */
+  --txt-pad: 10px;
+  /* padding inside panels to prevent labels from clipping */
+  --panel-roundness: 0px;
+  /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
 
-    /* background colors */
-    --bg-0: oklch(19% 0 0);
-    /* main background color. */
-    --bg-1: oklch(23% 0 0);
-    /* background color for secondary elements like code blocks, embeds, etc. */
-    --bg-2: oklch(27% 0 0);
-    /* color of neutral buttons. */
-    --bg-3: oklch(31% 0 0);
-    /* color of neutral buttons when hovered. */
+  /* background colors */
+  --bg-0: oklch(19% 0 0);
+  /* main background color. */
+  --bg-1: oklch(23% 0 0);
+  /* background color for secondary elements like code blocks, embeds, etc. */
+  --bg-2: oklch(27% 0 0);
+  /* color of neutral buttons. */
+  --bg-3: oklch(31% 0 0);
+  /* color of neutral buttons when hovered. */
 
-    /* state modifiers */
-    --hover: oklch(54% 0 0 / 0.1);
-    /* color of hovered elements. */
-    --active: oklch(54% 0 0 / 0.2);
-    /* color of elements when clicked. */
-    --selected: var(--active);
-    /* color of selected elements. */
+  /* state modifiers */
+  --hover: oklch(54% 0 0 / 0.1);
+  /* color of hovered elements. */
+  --active: oklch(54% 0 0 / 0.2);
+  /* color of elements when clicked. */
+  --selected: var(--active);
+  /* color of selected elements. */
 
-    /* text colors */
-    --txt-dark: var(--bg-0);
-    /* color of dark text on colored backgrounds. */
-    --txt-link: var(--cyan);
-    /* color of links. */
-    --txt-0: oklch(90% 0 0);
-    /* color of bright/white text. */
-    --txt-1: oklch(80% 0 0);
-    /* main text color. */
-    --txt-2: oklch(60% 0 0);
-    /* color of secondary text like channel list. */
-    --txt-3: oklch(40% 0 0);
-    /* color of muted text. */
+  /* text colors */
+  --txt-dark: var(--bg-0);
+  /* color of dark text on colored backgrounds. */
+  --txt-link: var(--cyan);
+  /* color of links. */
+  --txt-0: oklch(90% 0 0);
+  /* color of bright/white text. */
+  --txt-1: oklch(80% 0 0);
+  /* main text color. */
+  --txt-2: oklch(60% 0 0);
+  /* color of secondary text like channel list. */
+  --txt-3: oklch(40% 0 0);
+  /* color of muted text. */
 
-    /* accent colors */
-    --acc-0: var(--purple);
-    /* main accent color. */
-    --acc-1: var(--purple-1);
-    /* color of accent buttons when hovered. */
-    --acc-2: var(--purple-2);
-    /* color of accent buttons when clicked. */
+  /* accent colors */
+  --acc-0: var(--purple);
+  /* main accent color. */
+  --acc-1: var(--purple-1);
+  /* color of accent buttons when hovered. */
+  --acc-2: var(--purple-2);
+  /* color of accent buttons when clicked. */
 
-    /* borders */
-    --border-width: 2px;
-    /* panel border thickness. */
-    --border-color: var(--bg-3);
-    /* panel border color. */
-    --border-hover-color: var(--acc-0);
-    /* panel border color when hovered. */
-    --border-transition: 0.2s ease;
-    /* panel border transition. */
+  /* borders */
+  --border-width: 2px;
+  /* panel border thickness. */
+  --border-color: var(--bg-3);
+  /* panel border color. */
+  --border-hover-color: var(--acc-0);
+  /* panel border color when hovered. */
+  --border-transition: 0.2s ease;
+  /* panel border transition. */
 
-    /* status dot colors */
-    --online-dot: var(--green);
-    /* color of online dot. */
-    --dnd-dot: var(--pink);
-    /* color of do not disturb dot. */
-    --idle-dot: var(--yellow);
-    /* color of idle dot. */
-    --streaming-dot: var(--purple);
-    /* color of streaming dot. */
+  /* status dot colors */
+  --online-dot: var(--green);
+  /* color of online dot. */
+  --dnd-dot: var(--pink);
+  /* color of do not disturb dot. */
+  --idle-dot: var(--yellow);
+  /* color of idle dot. */
+  --streaming-dot: var(--purple);
+  /* color of streaming dot. */
 
-    /* mention/ping and message colors */
-    --mention-txt: var(--acc-0);
-    /* color of mention text. */
-    --mention-bg: color-mix(in oklch, var(--acc-0), transparent 90%);
-    /* background highlight of mention text. */
-    --mention-overlay: color-mix(in oklch, var(--acc-0), transparent 90%);
-    /* overlay color of messages that mention you. */
-    --mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%);
-    /* overlay color of messages that mention you when hovered. */
-    --reply-overlay: var(--active);
-    /* overlay color of message you are replying to. */
-    --reply-hover-overlay: var(--hover);
-    /* overlay color of message you are replying to when hovered. */
+  /* mention/ping and message colors */
+  --mention-txt: var(--acc-0);
+  /* color of mention text. */
+  --mention-bg: color-mix(in oklch, var(--acc-0), transparent 90%);
+  /* background highlight of mention text. */
+  --mention-overlay: color-mix(in oklch, var(--acc-0), transparent 90%);
+  /* overlay color of messages that mention you. */
+  --mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%);
+  /* overlay color of messages that mention you when hovered. */
+  --reply-overlay: var(--active);
+  /* overlay color of message you are replying to. */
+  --reply-hover-overlay: var(--hover);
+  /* overlay color of message you are replying to when hovered. */
 
-    /* color shades */
-    --pink: oklch(73% 0.12 0);
-    --pink-1: oklch(63% 0.12 0);
-    --pink-2: oklch(53% 0.12 0);
-    --purple: oklch(73% 0.12 300);
-    --purple-1: oklch(63% 0.12 300);
-    --purple-2: oklch(53% 0.12 300);
-    --cyan: oklch(73% 0.12 200);
-    --yellow: oklch(78% 0.12 80);
-    --green: oklch(73% 0.12 160);
-    --green-1: oklch(63% 0.12 160);
-    --green-2: oklch(53% 0.12 160);
+  /* color shades */
+  --pink: oklch(73% 0.12 0);
+  --pink-1: oklch(63% 0.12 0);
+  --pink-2: oklch(53% 0.12 0);
+  --purple: oklch(73% 0.12 300);
+  --purple-1: oklch(63% 0.12 300);
+  --purple-2: oklch(53% 0.12 300);
+  --cyan: oklch(73% 0.12 200);
+  --yellow: oklch(78% 0.12 80);
+  --green: oklch(73% 0.12 160);
+  --green-1: oklch(63% 0.12 160);
+  --green-2: oklch(53% 0.12 160);
 
-    /* smol theme */
-    --collapsed-sidebar-width: 64px;
-    --collapsed-member-list-width: 64px;
-    --collapsed-profile-width: calc(var(--profile-width) / 2.25);
-    --sidebar-width: 240px;
-    --profile-width: 340px;
-    --ui-margin-value: 12px;
-    --ui-floating-radius: 8px;
+  /* smol theme */
+  --collapsed-sidebar-width: 64px;
+  --collapsed-member-list-width: 64px;
+  --collapsed-profile-width: calc(var(--profile-width) / 2.25);
+  --sidebar-width: 240px;
+  --profile-width: 340px;
+  --ui-margin-value: 12px;
+  --ui-floating-radius: 8px;
 }
 
 [class^="base"] {
 
-    &,
-    >[class^=content_]>[class^=chat_] {
-        background-color: var(--bg-overlay-3, var(--background-tertiary));
-    }
+  &,
+  >[class^=content_]>[class^=chat_] {
+    background-color: var(--bg-overlay-3, var(--background-tertiary));
+  }
 
-    >[class^=content_]>[class^=sidebar_] {
-        margin-right: var(--ui-margin-value);
-    }
+  >[class^=content_]>[class^=sidebar_] {
+    margin-right: var(--ui-margin-value);
+  }
 
-    >[class^=content_]>[class^=chat_],
-    >[class^=content_]>[class^=sidebar_],
-    >[class^=content_]>[class^=chat_]>[class^=content_] {
-        gap: var(--ui-margin-value);
-        border-radius: var(--ui-floating-radius);
-    }
+  >[class^=content_]>[class^=chat_],
+  >[class^=content_]>[class^=sidebar_],
+  >[class^=content_]>[class^=chat_]>[class^=content_] {
+    gap: var(--ui-margin-value);
+    border-radius: var(--ui-floating-radius);
+  }
 
-    >[class^=content_]>[class^=chat_]>[class^=content_] {
-        box-shadow: none;
-    }
+  >[class^=content_]>[class^=chat_]>[class^=content_] {
+    box-shadow: none;
+  }
 
-    [class^=members],
-    >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
-    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_] {
+  [class^=members],
+  >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
+  >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_] {
 
-        border-radius: var(--ui-floating-radius);
-    }
+    border-radius: var(--ui-floating-radius);
+  }
 
-    margin: var(--ui-margin-value);
+  margin: var(--ui-margin-value);
 }
 
 [class^=base_]>[class^=content_]>[class^=sidebar_] {
-    width: var(--collapsed-sidebar-width);
-    border-bottom-right-radius: var(--ui-floating-radius);
-    border-top-right-radius: var(--ui-floating-radius);
-    transition: width ease 0.25s;
+  width: var(--collapsed-sidebar-width);
+  border-bottom-right-radius: var(--ui-floating-radius);
+  border-top-right-radius: var(--ui-floating-radius);
+  transition: width ease 0.25s;
 
-    &:hover {
-        width: var(--sidebar-width);
-    }
+  &:hover {
+    width: var(--sidebar-width);
+  }
 }
 
 [class^=membersWrap_] {
-    min-width: 0;
-    padding-top: unset;
+  min-width: 0;
+  padding-top: unset;
 
-    &,
-    >[class^=members_] {
-        width: var(--collapsed-member-list-width);
-        transition: width ease 0.25s;
-    }
+  &,
+  >[class^=members_] {
+    width: var(--collapsed-member-list-width);
+    transition: width ease 0.25s;
+  }
 
-    &:hover,
-    >[class^=members_]:hover {
-        width: var(--sidebar-width);
-    }
+  &:hover,
+  >[class^=members_]:hover {
+    width: var(--sidebar-width);
+  }
 }
 
 [class^='userPanelOuter_'] {
-    width: var(--collapsed-profile-width);
-    transition: width ease 0.25s;
+  width: var(--collapsed-profile-width);
+  transition: width ease 0.25s;
 }
 
 [class^='userPanelOuter_']:hover {
-    width: var(--profile-width);
+  width: var(--profile-width);
 }
 
 /* changes suggested by @andrew6rant */
 [class^=spine_] {
-    left: 6px;
+  left: 6px;
 }
 
 [class*=wrapper_][class*=typeThread_] {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 [class^=link_][role="link"],
 [class^=link_][role="button"] {
-    padding: 6px 0 6px 0;
-    right: 26px;
-    margin-right: -26px;
+  padding: 6px 0 6px 0;
+  right: 26px;
+  margin-right: -26px;
 }
 
 /* some system24 related fixes */
 [class^="panels"] [class^="avatarWrapper"] {
-    min-width: 0;
+  min-width: 0;
 
-    &,
-    >[class^="panels"] {
-        width: max-content;
-    }
+  &,
+  >[class^="panels"] {
+    width: max-content;
+  }
 }
 
 [class*="sidebar_"] [class*="panels"] [type*="button"],
 [class*="sidebar_"] [id='vc-spotify-progress-bar'] [aria-label="Total Duration"] {
-    display: none;
+  display: none;
 }
 
 [class*="sidebar_"]:hover [type*="button"],
 [class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [class^='bar_'],
 [class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [aria-label="Total Duration"] {
-    display: flex;
+  display: flex;
 }
 
 [class*="sidebar_"]:hover [class*="avatarWrapper_"]>[class*="avatar_"],
 [class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
-    margin: auto;
+  margin: auto;
 }
 
 [class*="sidebar_"] [class*="avatarWrapper_"]>[class*="avatar_"] {
-    margin-left: 20%;
+  margin-left: 20%;
 }
 
 [class^='membersWrap_']::after {
-    content: 'mem…';
+  content: 'mem…';
 }
 
 [class^='membersWrap_']:hover::after {
-    content: 'members';
+  content: 'members';
 }
 
 [class^='sidebar_']>[class^='container_']::after {
-    content: 'ser…';
+  content: 'ser…';
 }
 
 [class^='sidebar_']:hover>[class^='container_']::after {
-    content: 'server';
+  content: 'server';
 }
 
 /* rounding fixes */
 [class^="base"] {
-    [class^=members],
-    >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
-    >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
-    [class^='messagesWrapper_'] [class^=scroller_],
-    [class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
-    [class^='nowPlayingColumn_']>[class^='container_']{
-        border-radius: var(--panel-roundness);
-    }
+
+  [class^=members],
+  >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
+  >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
+  [class^='messagesWrapper_'] [class^=scroller_],
+  [class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
+  [class^='nowPlayingColumn_']>[class^='container_'] {
+    border-radius: var(--panel-roundness);
+  }
 }
 
 [class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
-    &>[class^="button_"] {
-        transform: scale(0.5);
-    }
+  &>[class^="button_"] {
+    transform: scale(0.5);
+  }
 
-    & [class^="contents"]>[class^="lottieIcon_"] {
-        transform: scale(2);
-    }
+  & [class^="contents"]>[class^="lottieIcon_"] {
+    transform: scale(2);
+  }
 }
 
 ul {
-    [class^='footer'] {
-        background: transparent
-    }
+  [class^='footer'] {
+    background: transparent
+  }
 
-    [class^='gradient'] {
-        background: var(--bg-overlay-app-frame, var(--background-tertiary))
-    }
+  [class^='gradient'] {
+    background: var(--bg-overlay-app-frame, var(--background-tertiary))
+  }
 }
 
 [class^='userPanelInner_'] {
-    border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
+  border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
 }
 
 [class^='animatedContainer_'] {
-    border-top-left-radius: calc(var(--panel-roundness) /1.5);
-    border-top-right-radius: calc(var(--panel-roundness) /1.5);
+  border-top-left-radius: calc(var(--panel-roundness) /1.5);
+  border-top-right-radius: calc(var(--panel-roundness) /1.5);
 }
 
 [class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'],
 [class^='panels_']>[id='vc-spotify-player']::after {
-    border-top-left-radius: var(--panel-roundness);
-    border-top-right-radius: var(--panel-roundness);
+  border-top-left-radius: var(--panel-roundness);
+  border-top-right-radius: var(--panel-roundness);
 }
 
 :has([class^='panels_']>[class^='wrapper'] [class*='connection_']) [id='vc-spotify-player']::after {
-    border-top-left-radius: 0 !important;
-    border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 }
 
 [class^='nowPlayingColumn_']>[class^='container_'] [class^='scroller_'] {
-    border-left: 0;
-    margin-left: 0;
+  border-left: 0;
+  margin-left: 0;
 }
 
 [class*='guilds_'] [class^='scroller_'],
 [class^='sidebar_'] [class^=scroller_] {
-    border-bottom-left-radius: var(--panel-roundness);
-    border-bottom-right-radius: var(--panel-roundness);
+  border-bottom-left-radius: var(--panel-roundness);
+  border-bottom-right-radius: var(--panel-roundness);
 }
 
 /* misc changes for system24 */
 .vc-spotify-time-left,
 .vc-spotify-time-right {
-    z-index: 1;
-    top: 5px;
-    mix-blend-mode: difference;
-    font-size: 14px;
+  z-index: 1;
+  top: 5px;
+  mix-blend-mode: difference;
+  font-size: 14px;
 }
 
 .vc-spotify-time-left {
-    left: 0;
+  left: 0;
 }
 
 [class*="sidebar_"]:hover .vc-spotify-time-left {
-    left: 6px;
+  left: 6px;
 }
 
 .theme-dark,
 html.theme-light {
-    --scrollbar-thin-thumb: display: none;
-    --scrollbar-thin-track: display: none;
+  --scrollbar-thin-thumb: display: none;
+  --scrollbar-thin-track: display: none;
 }
 
 [class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'] {
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 /* fix event tab */
 [class^=base]>[class^=content]>[class^=sidebar]>[class^=container]>[class^=container]>[class^=channelNotice] {
-    >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
-        display: none;
-    }
+  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
+    display: none;
+  }
 
-    >[class*=joinButton] {
-        min-width: 0;
-    }
+  >[class*=joinButton] {
+    min-width: 0;
+  }
 
-    >[class*=singleLine_] {
-        white-space: wrap;
-    }
+  >[class*=singleLine_] {
+    white-space: wrap;
+  }
 
-    >[class*=singleLine_]>[class^=stageIcon] {
-        display: none;
-    }
+  >[class*=singleLine_]>[class^=stageIcon] {
+    display: none;
+  }
 }
 
 [class^=base]>[class^=content]>[class^=sidebar]:hover>[class^=container]>[class^=container]>[class^=channelNotice] {
-    >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
-        display: block;
-    }
+  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
+    display: block;
+  }
 
-    >[class*=singleLine_]>[class^=stageIcon] {
-        display: block;
-    }
+  >[class*=singleLine_]>[class^=stageIcon] {
+    display: block;
+  }
 }

@@ -4,56 +4,56 @@
 */
 
 :has([class^='form_'] [class^='typing_']) [class^='channelBottomBarArea_'] {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 [class^='form_'] [class^='typing_'] {
-    border: 0;
-    margin-top: -8px;
-    width: 50%;
-    border-radius: var(--panel-roundness);
-    position: relative;
-    align-self: center;
-    background: var(--bg-2);
+  border: 0;
+  margin-top: -8px;
+  width: 50%;
+  border-radius: var(--panel-roundness);
+  position: relative;
+  align-self: center;
+  background: var(--bg-2);
+  transition: width 0.3s ease, background .5s ease, opacity .3s;
+
+  &>[class^='cooldownWrapper_'] {
+    flex-direction: row-reverse;
+  }
+
+  &>[class^='cooldownWrapper_']>[class^='slowModeIcon_'] {
+    margin-left: 0;
+    margin-right: 4px;
+  }
+
+  &:hover {
+    width: 85%;
+    background: color-mix(in oklch, var(--bg-2), transparent 50%);
+    backdrop-filter: blur(3px);
     transition: width 0.3s ease, background .5s ease, opacity .3s;
-
-    &>[class^='cooldownWrapper_'] {
-        flex-direction: row-reverse;
-    }
-
-    &>[class^='cooldownWrapper_']>[class^='slowModeIcon_'] {
-        margin-left: 0;
-        margin-right: 4px;
-    }
-
-    &:hover {
-        width: 85%;
-        background: color-mix(in oklch, var(--bg-2), transparent 50%);
-        backdrop-filter: blur(3px);
-        transition: width 0.3s ease, background .5s ease, opacity .3s;
-    }
+  }
 }
 
 [class^='chatContent_'] {
-    & [class^='jumpToPresentBar_'] {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        place-self: center;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0 !important;
-        bottom: var(--txt-pad);
-        right: 0;
-        left: 0;
-        border-radius: var(--panel-roundness);
-        padding-bottom: 0 !important;
-        background-color: color-mix(in oklch, var(--bg-2), transparent 25%);
-        backdrop-filter: blur(3px);
-    }
+  & [class^='jumpToPresentBar_'] {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    place-self: center;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0 !important;
+    bottom: var(--txt-pad);
+    right: 0;
+    left: 0;
+    border-radius: var(--panel-roundness);
+    padding-bottom: 0 !important;
+    background-color: color-mix(in oklch, var(--bg-2), transparent 25%);
+    backdrop-filter: blur(3px);
+  }
 
-    &:has([class^='typing_']) [class^='jumpToPresentBar_'] {
-        bottom: 36px;
-    }
+  &:has([class^='typing_']) [class^='jumpToPresentBar_'] {
+    bottom: 36px;
+  }
 }

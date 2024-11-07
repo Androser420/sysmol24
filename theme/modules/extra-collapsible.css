@@ -10,6 +10,7 @@
 }
 
 @media (max-width: 700px) {
+
   [class^='base']>[class^='content_']>[class^='chat_']>[class^='content_']>[class^="container_"],
   [class^="membersWrap_"] {
     display: none

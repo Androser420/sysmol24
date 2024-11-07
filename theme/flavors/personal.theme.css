@@ -15,44 +15,44 @@
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
 
 [class*="sidebar_"] [id='vc-spotify-progress-bar'] [class^='bar_'] [class^='barFill_'] {
-    opacity: 75%;
-    background: rgb(220, 220, 220);
-    transition: background ease 0.25s;
+  opacity: 75%;
+  background: rgb(220, 220, 220);
+  transition: background ease 0.25s;
 }
 
 [class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [class^='bar_'] [class^='barFill_'] {
-    opacity: 100%;
-    background: var(--control-brand-foreground-new);
+  opacity: 100%;
+  background: var(--control-brand-foreground-new);
 }
 
 [class*=guilds_]::after {
-    content: 'serek';
+  content: 'serek';
 }
 
 [class^='membersWrap_']::after {
-    content: 'tuah';
+  content: 'tuah';
 }
 
 [class^='membersWrap_']:hover::after {
-    content: 'nelles';
+  content: 'nelles';
 }
 
 [class^=sidebar_] [class^='panels_']::after {
-    content: 'yoy!';
+  content: 'yoy!';
 }
 
 [class^=sidebar_] [class^='panels_']:hover::after {
-    content: 'literally yoy!';
+  content: 'literally yoy!';
 }
 
 [class^='form_'] [class^='channelTextArea_']::after {
-    content: 'meow';
+  content: 'meow';
 }
 
 [class^=sidebar_]:hover [class^='privateChannels_']::after {
-    content: 'dms / gcs';
+  content: 'dms / gcs';
 }
 
 [class*='search_']>[class^='searchBar_'] {
-    width: 120px;
+  width: 120px;
 }

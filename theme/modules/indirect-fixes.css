@@ -1,0 +1,98 @@
+/**
+ * @name indirect fixes | sysmol24
+ * @description various workaround fixes for sysmol24.
+*/
+
+/* collapsible Friends tab */
+[class^='peopleColumn_'],
+[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
+  overflow: hidden !important;
+}
+
+[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
+  padding-top: 10px;
+  margin-top: -10px;
+}
+
+[class^='peopleList_'] [class*='discriminator_'] {
+  display: none;
+}
+
+[class^='peopleListItem_'] [class*='hovered_'] [class*='discriminator_'] {
+  display: flex;
+}
+
+/* fix typing indicators */
+[class^='form_'] [class^='typing_'] {
+    border: transparent;
+    background: transparent;
+
+    &>[class^='typingDots_'] {
+        margin-left: calc(var(--panel-roundness) /2);
+    }
+
+    &>[class^='slowModeIcon'],
+    [class^='cooldownWrapper_'] {
+        margin-right: calc(var(--panel-roundness) /2)
+    }
+}
+
+/* added some outline and shadow to typing indicators */
+[class^='form_'] [class^='typing_'] [class^='text_'] {
+    text-shadow: 0px 0px 8px var(--txt-dark),
+        -1px -1px 0 var(--txt-dark),
+        0 -1px 0 var(--txt-dark),
+        1px -1px 0 var(--txt-dark),
+        1px 0 0 var(--txt-dark),
+        1px 1px 0 var(--txt-dark),
+        0 1px 0 var(--txt-dark),
+        -1px 1px 0 var(--txt-dark),
+        -1px 0 0 var(--txt-dark);
+}
+
+/* fix DecodeBase64 icon color */
+[aria-label*="Base64"] {
+    svg {
+        path {
+            stroke: var(--interactive-normal);
+        }
+    }
+
+    &:hover svg path {
+        stroke: var(--interactive-hover);
+        background-color: var(--background-modifier-hover)
+    }
+}
+
+/* MemberCount support (very basic) */
+[class*='vc-membercount-widget'] {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+[class*='vc-membercount-member-list'] {
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: -0.5em;
+    padding-inline: 2em;
+}
+
+[class*='vc-membercount-online-dot'],
+[class*='vc-membercount-total-dot'] {
+    display: none !important;
+    margin-right: 0.25em;
+}
+
+[class^=members_]:hover [class*='vc-membercount-widget'] {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+[class^=members_]:hover [class*='vc-membercount-online-dot'],
+[class^=members_]:hover [class*='vc-membercount-total-dot'] {
+    display: inline-flex !important
+}

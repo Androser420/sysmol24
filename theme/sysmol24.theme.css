@@ -2,7 +2,7 @@
  * @name sysmol24
  * @description a tui-style, collapsible discord theme.
  * @author smg8, refact0r, kxttens
- * @version 1.0.2
+ * @version 1.0.3
  * @invite nz87hXyvcy
  * @website https://github.com/Androser420/sysmol24
  * @source https://github.com/Androser420/sysmol24/blob/main/theme/sysmol24.theme.css
@@ -10,5 +10,9 @@
  * @authorLink https://www.refact0r.dev
 */
 
+/* flavors */
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/main.css');
 @import url('https://refact0r.github.io/system24/src/unrounding.css');
+
+/* modules */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');

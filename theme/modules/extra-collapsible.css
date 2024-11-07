@@ -31,22 +31,3 @@
     margin-left: var(--pad)
   }
 }
-
-/* collapsible Friends tab */
-[class^='peopleColumn_'],
-[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
-  overflow: hidden !important;
-}
-
-[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
-  padding-top: 10px;
-  margin-top: -10px;
-}
-
-[class^='peopleList_'] [class*='discriminator_'] {
-  display: none;
-}
-
-[class^='peopleListItem_'] [class*='hovered_'] [class*='discriminator_'] {
-  display: flex;
-}

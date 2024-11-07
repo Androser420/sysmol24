@@ -327,6 +327,10 @@ ul {
   left: 6px;
 }
 
+#vc-spotify-info-wrapper img {
+    max-width: 100%;
+}
+
 .theme-dark,
 html.theme-light {
   --scrollbar-thin-thumb: display: none;

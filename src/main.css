@@ -1,5 +1,6 @@
 @import url('https://refact0r.github.io/system24/src/main.css');
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/classes/updated-classes.css');
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
 
 /* customize things here */
 :root {
@@ -142,14 +143,14 @@
   [class^=members],
   >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
   >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_] {
-
     border-radius: var(--ui-floating-radius);
   }
 
   margin: var(--ui-margin-value);
 }
 
-[class^=content_]>[class^=sidebar_] {
+/* sidebar */
+[class^=sidebar_] {
   width: var(--collapsed-sidebar-width);
   border-bottom-right-radius: var(--ui-floating-radius);
   border-top-right-radius: var(--ui-floating-radius);
@@ -157,6 +158,46 @@
 
   &:hover {
     width: var(--sidebar-width);
+
+    [type*="button"],
+    [id='vc-spotify-progress-bar'] [class^='bar_'],
+    [aria-label="Total Duration"] {
+      display: flex;
+    }
+
+    [class*="avatarWrapper_"]>[class*="avatar_"],
+    [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
+      margin: auto;
+    }
+
+    .vc-spotify-time-left {
+      left: 6px;
+    }
+
+    /* fix event tab */
+    [class^=channelNotice] {
+
+      [class^=stageIcon],
+      [class*=liveNowText] {
+        display: block;
+      }
+    }
+  }
+
+  & [class^=channelNotice] {
+
+    [class^=stageIcon],
+    [class*=liveNowText] {
+      display: none;
+    }
+
+    >[class*=joinButton] {
+      min-width: 0;
+    }
+
+    >[class*=singleLine_] {
+      white-space: wrap;
+    }
   }
 }
 
@@ -176,17 +217,17 @@
   }
 }
 
-[class^='base'] [class^='content_']>[class^='outer_'] {
+[class^='content_']>[class^='outer_'] {
   width: var(--collapsed-profile-width);
   transition: width ease 0.25s;
 
   >[class^='inner_'] {
     border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
   }
-}
 
-[class^='base'] [class^='content_']>[class^='outer_']:hover {
-  width: var(--profile-width);
+  &:hover {
+    width: var(--profile-width);
+  }
 }
 
 /* changes suggested by @andrew6rant */
@@ -201,37 +242,23 @@
 [class^=link_][role="link"],
 [class^=link_][role="button"] {
   padding: 6px 0 6px 0;
-  right: 26px;
-  margin-right: -26px;
+  right: 28px;
+  margin-right: -28px;
 }
 
-/* some system24 related fixes */
-[class^="panels"] [class^="avatarWrapper"] {
-  min-width: 0;
+/* other system24 related fixes */
+[class^='panels_'] {
+  & [class^="avatarWrapper"] {
+    min-width: 0;
+  }
 
-  &,
-  >[class^="panels"] {
-    width: max-content;
+  & [type*="button"],
+  [aria-label="Total Duration"] {
+    display: none;
   }
 }
 
-[class*="sidebar_"] [class*="panels"] [type*="button"],
-[class*="sidebar_"] [id='vc-spotify-progress-bar'] [aria-label="Total Duration"] {
-  display: none;
-}
-
-[class*="sidebar_"]:hover [type*="button"],
-[class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [class^='bar_'],
-[class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [aria-label="Total Duration"] {
-  display: flex;
-}
-
-[class*="sidebar_"]:hover [class*="avatarWrapper_"]>[class*="avatar_"],
-[class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
-  margin: auto;
-}
-
-[class*="sidebar_"] [class*="avatarWrapper_"]>[class*="avatar_"] {
+[class^="avatarWrapper_"]>[class*="avatar_"] {
   margin-left: 20%;
 }
 
@@ -280,7 +307,7 @@ ul {
 }
 
 [class*='guilds_'] [class^='scroller_'],
-[class^='sidebar_'] [class^=scroller_] {
+[class^='sidebar_'] [class^='scroller_'] {
   border-bottom-left-radius: var(--panel-roundness);
   border-bottom-right-radius: var(--panel-roundness);
 }
@@ -298,10 +325,6 @@ ul {
   left: 0;
 }
 
-[class*="sidebar_"]:hover .vc-spotify-time-left {
-  left: 6px;
-}
-
 #vc-spotify-info-wrapper img {
   max-width: 100%;
 }
@@ -314,29 +337,4 @@ html.theme-light {
 
 [class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'] {
   padding-bottom: 8px;
-}
-
-/* fix event tab */
-[class^=sidebar]>[class^=container] [class^=channelNotice] {
-
-  >[class*=singleLine_]>[class^=stageIcon],
-  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
-    display: none;
-  }
-
-  >[class*=joinButton] {
-    min-width: 0;
-  }
-
-  >[class*=singleLine_] {
-    white-space: wrap;
-  }
-}
-
-[class^=sidebar]:hover>[class^=container] [class^=channelNotice] {
-
-  >[class*=singleLine_]>[class^=stageIcon],
-  >[class^=textBlock]>[class^=text-xs][class*=liveNowText] {
-    display: block;
-  }
 }

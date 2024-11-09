@@ -19,3 +19,8 @@
     display: none !important;
   }
 }
+
+[class^='textArea_'] [class*='fontSize16Padding_'] {
+    padding-bottom: 11px !important;
+    padding-top: 11px !important;
+}

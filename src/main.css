@@ -236,8 +236,8 @@
 }
 
 [class^='textArea_'] [class*='fontSize16Padding_'] {
-    padding-bottom: 16px !important;
-    padding-top: 16px !important;
+    padding-bottom: var(--pad) !important;
+    padding-top: var(--pad) !important;
 }
 
 /* rounding fixes */

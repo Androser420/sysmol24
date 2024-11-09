@@ -1,0 +1,10 @@
+.theme-dark,
+html.theme-light {
+  --__spoiler-warning-text-color: var(--txt-1);
+  --__spoiler-warning-text-color--hover: var(--txt-0);
+}
+
+::selection {
+  background-color: #2f3549;
+  color: #c87779;
+}

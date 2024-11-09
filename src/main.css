@@ -235,11 +235,6 @@
   margin-left: 20%;
 }
 
-[class^='textArea_'] [class*='fontSize16Padding_'] {
-    padding-bottom: var(--pad) !important;
-    padding-top: var(--pad) !important;
-}
-
 /* rounding fixes */
 [class^="base"] {
 

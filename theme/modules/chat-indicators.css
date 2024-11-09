@@ -3,10 +3,27 @@
  * @description a module that makes chat indicators such as typing or cooldown float, expand on hover and look better.
 */
 
+/* fix colors */
+[class^=jumpToPresentBar_]>button {
+  color: var(--txt-1) !important;
+}
+
+[class^="form_"] [class^="typing_"] {
+  &>[class^='cooldownWrapper_'] {
+    color: var(--txt-1) !important;
+  }
+}
+
+[class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
+  background: var(--bg-0) !important;
+}
+
+/* remove text outline & shadow */
 [class^='form_'] [class^='typing_'] [class^='text_'] {
   text-shadow: unset !important;
 }
 
+/* indicators */
 :has([class^='form_'] [class^='typing_']) [class^='channelBottomBarArea_'] {
   margin-top: -3px;
 }

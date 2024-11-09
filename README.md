@@ -24,7 +24,7 @@
 ## Flavors
 <details><summary>Click to see a few previews.</summary>
 
-###### ⚠️ NOTE: Rounding is disabled by default for everything you see bellow!
+###### ⚠️ NOTE: Rounding is enabled by default, if you want otherwise, insert [unrounding.css](https://refact0r.github.io/system24/src/unrounding.css) yourself!
 
 <br>
 

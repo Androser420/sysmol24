@@ -8,11 +8,12 @@
  * @authorId 1106858419861864489
 */
 
-/* import theme */
-@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css');
+/* flavors */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/main.css');
 
-/* theme overrides */
-@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/light/overrides.css');
+/* modules */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/chat-indicators.css');
 
 /* customize things here */
 :root {

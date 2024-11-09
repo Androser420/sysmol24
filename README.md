@@ -38,14 +38,14 @@
 > Light Flavor
 
 ![light](/assets/light.png)
-- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavor/light/main.theme.css`
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/light/main.theme.css`
 
 <br>
 
 > Gruvbox Material Flavor
 
 ![gruvbox](/assets/gruvbox.png)
-- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavor/gruvbox-material/main.theme.css`
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/gruvbox-material/main.theme.css`
 
 </details>
 

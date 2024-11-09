@@ -4,11 +4,11 @@
 */
 
 /* user profiles */
-[class^='base'] [class^='content_']>[class^='outer_'] {
+[class^='content_']>[class^='outer_'] {
 	--background-secondary-alt: var(--bg-0) !important;
 }
 
-[class^='base'] [class^='content_']>[class^='outer_'] {
+[class^='content_']>[class^='outer_'] {
 	border-radius: var(--panel-roundness);
 	border: var(--border-width) solid var(--border-color);
 	transition: border-color var(--border-transition);
@@ -20,7 +20,7 @@
 	}
 }
 
-[class^='base'] [class^='content_']>[class^='outer_']::after {
+[class^='content_']>[class^='outer_']::after {
 	display: block;
 	color: var(--txt-3);
 	font-weight: var(--label-font-weight);
@@ -33,16 +33,16 @@
 	transition: color var(--border-transition);
 }
 
-[class^='base'] [class^='content_']>[class^='outer_']::after {
+[class^='content_']>[class^='outer_']::after {
 	content: 'profile';
 }
 
-[class^='base'] [class^='content_']>[class^='outer_'] {
+[class^='content_']>[class^='outer_'] {
 	padding: var(--txt-pad);
 	box-sizing: border-box;
 	background-clip: content-box;
 }
 
-[class^='base'] [class^='content_']>[class^='outer_']>[class^='inner_'] {
+[class^='content_']>[class^='outer_']>[class^='inner_'] {
 	position: relative;
 }

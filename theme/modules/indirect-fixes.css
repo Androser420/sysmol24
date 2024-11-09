@@ -4,55 +4,61 @@
 */
 
 /* system24 related changes */
-[class^='membersWrap_']::after {
-  content: 'mem…';
+[class^='membersWrap_'] {
+  &::after {
+    content: 'mem…';
+  }
+
+  &:hover::after {
+    content: 'members';
+  }
 }
 
-[class^='membersWrap_']:hover::after {
-  content: 'members';
-}
+[class^='sidebar_'] {
+  &>[class^='container_']::after {
+    content: 'ser…';
+  }
 
-[class^='sidebar_']>[class^='container_']::after {
-  content: 'ser…';
-}
-
-[class^='sidebar_']:hover>[class^='container_']::after {
-  content: 'server';
+  &:hover>[class^='container_']::after {
+    content: 'server';
+  }
 }
 
 [class^='textArea_'] [class*='fontSize16Padding_'] {
-    padding-bottom: 17px !important;
-    padding-top: 17px !important;
+  padding-bottom: 17px !important;
+  padding-top: 17px !important;
 }
 
 /* fix app button rounding */
-[class^="channelAppLauncher_"]>[class^="buttonContainer_"] {
-  &>[class^="button_"] {
+[class^="channelAppLauncher_"] {
+  & [class^="button_"] {
     transform: scale(0.5);
   }
 
-  & [class^="contents"]>[class^="lottieIcon_"] {
+  & [class^="lottieIcon_"] {
     transform: scale(2);
   }
 }
 
 /* collapsible Friends tab */
 [class^='peopleColumn_'],
-[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
+[aria-label^="Friends"] {
   overflow: hidden !important;
 }
 
-[class^='base_']>[class^='content_']>[class^='container_'][aria-label^="Friends"] {
+[aria-label^="Friends"] {
   padding-top: 10px;
   margin-top: -10px;
 }
 
-[class^='peopleList_'] [class*='discriminator_'] {
-  display: none;
-}
+[class^='peopleList_'] {
+  & [class*='discriminator_'] {
+    display: none;
+  }
 
-[class^='peopleListItem_'] [class*='hovered_'] [class*='discriminator_'] {
-  display: flex;
+  & [class*='hovered_'] [class*='discriminator_'] {
+    display: flex;
+  }
 }
 
 /* fix typing indicators */
@@ -68,19 +74,18 @@
   [class^='cooldownWrapper_'] {
     margin-right: calc(var(--panel-roundness) /2)
   }
-}
 
-/* added some outline and shadow to typing indicators */
-[class^='form_'] [class^='typing_'] [class^='text_'] {
-  text-shadow: 0px 0px 8px var(--txt-dark),
-    -1px -1px 0 var(--txt-dark),
-    0 -1px 0 var(--txt-dark),
-    1px -1px 0 var(--txt-dark),
-    1px 0 0 var(--txt-dark),
-    1px 1px 0 var(--txt-dark),
-    0 1px 0 var(--txt-dark),
-    -1px 1px 0 var(--txt-dark),
-    -1px 0 0 var(--txt-dark);
+  & [class^='text_'] {
+    text-shadow: 0px 0px 8px var(--txt-dark),
+      -1px -1px 0 var(--txt-dark),
+      0 -1px 0 var(--txt-dark),
+      1px -1px 0 var(--txt-dark),
+      1px 0 0 var(--txt-dark),
+      1px 1px 0 var(--txt-dark),
+      0 1px 0 var(--txt-dark),
+      -1px 1px 0 var(--txt-dark),
+      -1px 0 0 var(--txt-dark);
+  }
 }
 
 /* fix DecodeBase64 icon color */
@@ -117,14 +122,16 @@
   margin-right: .25em;
 }
 
-[class^=members_]:hover [class*='vc-membercount-widget'] {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-}
+[class^=members_]:hover {
+  & [class*='vc-membercount-widget'] {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+  }
 
-[class^=members_]:hover [class*='vc-membercount-online-dot'],
-[class^=members_]:hover [class*='vc-membercount-total-dot'] {
-  display: inline-flex !important
+  & [class*='vc-membercount-online-dot'],
+  [class*='vc-membercount-total-dot'] {
+    display: inline-flex !important
+  }
 }

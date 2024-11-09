@@ -5,44 +5,37 @@
 
 /* user profiles */
 [class^='content_']>[class^='outer_'] {
-	--background-secondary-alt: var(--bg-0) !important;
-}
+  --background-secondary-alt: var(--bg-0) !important;
+  padding: var(--txt-pad);
+  box-sizing: border-box;
+  background-clip: content-box;
+  border-radius: var(--panel-roundness);
+  border: var(--border-width) solid var(--border-color);
+  transition: border-color var(--border-transition);
 
-[class^='content_']>[class^='outer_'] {
-	border-radius: var(--panel-roundness);
-	border: var(--border-width) solid var(--border-color);
-	transition: border-color var(--border-transition);
-	&:hover {
-		border-color: var(--border-hover-color);
-		&::after {
-			color: var(--border-hover-color);
-		}
-	}
-}
+  &:hover {
+    border-color: var(--border-hover-color);
 
-[class^='content_']>[class^='outer_']::after {
-	display: block;
-	color: var(--txt-3);
-	font-weight: var(--label-font-weight);
-	position: absolute;
-	top: -10px;
-	left: 8px;
-	background-color: var(--bg-0);
-	padding: 0 4px;
-	z-index: 100;
-	transition: color var(--border-transition);
-}
+    &::after {
+      color: var(--border-hover-color);
+    }
+  }
 
-[class^='content_']>[class^='outer_']::after {
-	content: 'profile';
-}
+  &::after {
+    display: block;
+    color: var(--txt-3);
+    font-weight: var(--label-font-weight);
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    background-color: var(--bg-0);
+    padding: 0 4px;
+    z-index: 100;
+    transition: color var(--border-transition);
+    content: 'profile';
+  }
 
-[class^='content_']>[class^='outer_'] {
-	padding: var(--txt-pad);
-	box-sizing: border-box;
-	background-clip: content-box;
-}
-
-[class^='content_']>[class^='outer_']>[class^='inner_'] {
-	position: relative;
+  >[class^='inner_'] {
+    position: relative;
+  }
 }

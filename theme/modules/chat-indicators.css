@@ -4,14 +4,9 @@
 */
 
 /* fix colors */
+[class^='cooldownWrapper_'],
 [class^=jumpToPresentBar_]>button {
   color: var(--txt-1) !important;
-}
-
-[class^="form_"] [class^="typing_"] {
-  &>[class^='cooldownWrapper_'] {
-    color: var(--txt-1) !important;
-  }
 }
 
 [class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
@@ -40,10 +35,10 @@
 
   &>[class^='cooldownWrapper_'] {
     flex-direction: row-reverse;
-  }
 
-  &>[class^='cooldownWrapper_']>[class^='slowModeIcon_'] {
-    margin: 0 4px;
+    &>[class^='slowModeIcon_'] {
+      margin: 0 4px;
+    }
   }
 
   &:hover {

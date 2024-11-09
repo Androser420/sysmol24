@@ -1,40 +1,48 @@
-[class*="sidebar_"] [id='vc-spotify-progress-bar'] [class^='bar_'] [class^='barFill_'] {
-  opacity: 75%;
-  background: rgb(220, 220, 220);
-  transition: background ease 0.25s;
-}
+[class^=sidebar_] {
+  & [class^='barFill_'] {
+    opacity: 75%;
+    background: rgb(220, 220, 220);
+    transition: background ease 0.25s;
+  }
 
-[class*="sidebar_"]:hover [id='vc-spotify-progress-bar'] [class^='bar_'] [class^='barFill_'] {
-  opacity: 100%;
-  background: var(--control-brand-foreground-new);
+  & [class^='panels_'] {
+    &::after {
+      content: 'yoy!';
+    }
+
+    &:hover::after {
+      content: 'literally yoy!';
+    }
+  }
+
+  &:hover {
+    [class^='privateChannels_']::after {
+      content: 'dms / gcs';
+    }
+
+    [class^='barFill_'] {
+      opacity: 100%;
+      background: var(--control-brand-foreground-new);
+    }
+  }
 }
 
 [class*=guilds_]::after {
   content: 'serek';
 }
 
-[class^='membersWrap_']::after {
-  content: 'tuah';
-}
+[class^='membersWrap_'] {
+  &::after {
+    content: 'tuah';
+  }
 
-[class^='membersWrap_']:hover::after {
-  content: 'nelles';
-}
-
-[class^=sidebar_] [class^='panels_']::after {
-  content: 'yoy!';
-}
-
-[class^=sidebar_] [class^='panels_']:hover::after {
-  content: 'literally yoy!';
+  &:hover::after {
+    content: 'nelles';
+  }
 }
 
 [class^='form_'] [class^='channelTextArea_']::after {
   content: 'meow';
-}
-
-[class^=sidebar_]:hover [class^='privateChannels_']::after {
-  content: 'dms / gcs';
 }
 
 [class*='search_']>[class^='searchBar_'] {

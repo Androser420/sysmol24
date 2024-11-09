@@ -1,0 +1,14 @@
+[class^=jumpToPresentBar_]>button {
+  color: var(--txt-1) !important;
+}
+
+[class^="form_"] [class^="typing_"] {
+  &>[class^='cooldownWrapper_'] {
+    color: var(--txt-1) !important;
+  }
+}
+
+[class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
+  background: var(--bg-0) !important;
+  /* message buttons */
+}

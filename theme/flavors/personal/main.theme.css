@@ -1,0 +1,21 @@
+/**
+ * @name sysmol24 (smg8)
+ * @description a tui-style, collapsible discord theme with some of my personal preferences.
+ * @author smg8
+ * @version 1.0.4
+ * @website https://github.com/Androser420/sysmol24
+ * @source https://github.com/Androser420/sysmol24/blob/main/theme/flavors/personal/main.theme.css
+ * @authorId 1106858419861864489
+*/
+
+/* flavors */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/main.css');
+
+/* modules */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css");
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/chat-indicators.css");
+@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/more-compact.css");
+
+/* theme overrides */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal/overrides.css');

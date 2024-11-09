@@ -149,7 +149,7 @@
   margin: var(--ui-margin-value);
 }
 
-[class^=base_]>[class^=content_]>[class^=sidebar_] {
+[class^=content_]>[class^=sidebar_] {
   width: var(--collapsed-sidebar-width);
   border-bottom-right-radius: var(--ui-floating-radius);
   border-top-right-radius: var(--ui-floating-radius);

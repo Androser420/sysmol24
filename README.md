@@ -1,4 +1,4 @@
-![preivew](/assets/sysmol24.png)
+![preview](/assets/sysmol24.png)
 
 # <p align="center"> sysmol24 </p>
 
@@ -22,31 +22,26 @@
 - Add `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css` to your theme import links.
 
 ## Flavors
-<details><summary>Click to see a few previews.</summary>
 
 ###### ⚠️ NOTE: Rounding is enabled by default, if you want otherwise, insert [unrounding.css](https://refact0r.github.io/system24/src/unrounding.css) yourself!
 
-<br>
+<details><summary>Dark <small>(default)</small></summary>
 
-> Default Flavor
-
-![default](/assets/default.png)
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css`
 
-<br>
+![default](/assets/default.png)
+</details>
+<details><summary>Light</summary>
 
-> Light Flavor
-
-![light](/assets/light.png)
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/light/main.theme.css`
 
-<br>
+![light](/assets/light.png)
+</details>
+<details><summary>Gruvbox Material</summary>
 
-> Gruvbox Material Flavor
-
-![gruvbox](/assets/gruvbox.png)
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/gruvbox-material/main.theme.css`
 
+![gruvbox](/assets/gruvbox.png)
 </details>
 
 ---

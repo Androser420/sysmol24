@@ -3,7 +3,7 @@
  * @description a Float theme inspired module that removes certain panels when app window size shrinks.
 */
 
-@media (max-height: 600px) {
+@media (max-height: 500px) {
   [class^="chat_"] [class^=subtitleContainer_] {
     display: none
   }

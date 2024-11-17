@@ -14,13 +14,34 @@
 }
 
 /* hide cooldown text (remove if you want it back) */
-[class^='chatContent_'] {
-  & [class^='jumpToPresentBar_'] [class^="barButtonMain_"] {
-    display: none !important;
+[class^='jumpToPresentBar_']>[class^="barButtonMain_"] {
+  display: none !important;
+}
+
+[class^='channelBottomBarArea_'] {
+  & [class*='fontSize16Padding_'] {
+    padding-bottom: 11px !important;
+    padding-top: 11px !important;
+  }
+
+  & [class*='slateTextArea_'] {
+    padding-right: 0;
+    right: 0;
+  }
+
+  & [class*='attachButton_'] {
+    padding: 12px;
+
+    svg {
+      width: 20px;
+    }
+  }
+
+  & [class*="buttons_"] button {
+    width: 32px;
   }
 }
 
-[class^='textArea_'] [class*='fontSize16Padding_'] {
-    padding-bottom: 11px !important;
-    padding-top: 11px !important;
+[class*='guilds_'] {
+  padding-top: unset;
 }

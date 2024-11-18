@@ -23,10 +23,12 @@
 
 ## Flavors
 
-###### ⚠️ NOTE: Rounding is enabled by default, if you want otherwise, insert [unrounding.css](https://refact0r.github.io/system24/src/unrounding.css) yourself!
+> [!NOTE]  
+> Rounding is enabled by default, if you want otherwise, insert [unrounding.css](https://refact0r.github.io/system24/src/unrounding.css) yourself!
 
 <details><summary>Dark <small>(default)</small></summary>
 
+- **Includes unrounding.css**
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css`
 
 ![default](/assets/default.png)
@@ -37,11 +39,53 @@
 
 ![light](/assets/light.png)
 </details>
+
+---
+
+<details><summary>Catppuccin Macchiato</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-macchiato/main.theme.css`
+
+![macchiato](/assets/macchiato.png)
+</details>
+<details><summary>Catppuccin Mocha</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-mocha/main.theme.css`
+
+![mocha](/assets/mocha.png)
+</details>
+
+---
+
 <details><summary>Gruvbox Material</summary>
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/gruvbox-material/main.theme.css`
 
 ![gruvbox](/assets/gruvbox.png)
+</details>
+<details><summary>Spotify</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/spotify-text/main.theme.css`
+
+![spotify](/assets/spotify.png)
+</details>
+<details><summary>Vencord</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/vencord/main.theme.css`
+
+![vencord](/assets/vencord.png)
+</details>
+<details><summary>Tokyo Night</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/tokyo-night/main.theme.css`
+
+![tokyo-night](/assets/tokyo-night.png)
+</details>
+<details><summary>Rosepine</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/rosepine/main.theme.css`
+
+![rosepine](/assets/rosepine.png)
 </details>
 
 ---

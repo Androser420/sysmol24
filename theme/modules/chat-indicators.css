@@ -13,11 +13,6 @@
   background: var(--bg-0) !important;
 }
 
-/* remove text outline & shadow */
-[class^='form_'] [class^='typing_'] [class^='text_'] {
-  text-shadow: unset !important;
-}
-
 /* indicators */
 :has([class^='form_'] [class^='typing_']) [class^='channelBottomBarArea_'] {
   margin-top: -3px;
@@ -33,7 +28,12 @@
   background: var(--bg-2);
   transition: width .3s ease, background .3s ease, opacity .3s;
 
-  &>[class^='cooldownWrapper_'] {
+  >[class^='typingDots_'] {
+    margin-left: 2px !important;
+  }
+
+  >[class^='cooldownWrapper_'] {
+    margin-right: 2px !important;
     flex-direction: row-reverse;
 
     &>[class^='slowModeIcon_'] {
@@ -51,6 +51,7 @@
 
 [class^='chatContent_'] {
   & [class^='jumpToPresentBar_'] {
+    opacity: .95 !important;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -66,6 +67,11 @@
     padding-bottom: 0 !important;
     background-color: color-mix(in oklch, var(--bg-2), transparent 25%);
     backdrop-filter: blur(3px);
+    transition: opacity.15s;
+
+    &:hover {
+      opacity: 1 !important
+    }
   }
 
   &:has([class^='typing_']) [class^='jumpToPresentBar_'] {

@@ -63,29 +63,26 @@
 
 /* fix typing indicators */
 [class^='form_'] [class^='typing_'] {
-  border: transparent;
-  background: transparent;
+  background: var(--bg-0);
+  border-bottom-left-radius: var(--panel-roundness);
+  border-bottom-right-radius: var(--panel-roundness);
 
-  &>[class^='typingDots_'] {
+  >[class^='typingDots_'] {
     margin-left: calc(var(--panel-roundness) /2);
   }
 
-  &>[class^='slowModeIcon'],
-  [class^='cooldownWrapper_'] {
+  >[class^='cooldownWrapper_'] {
     margin-right: calc(var(--panel-roundness) /2)
   }
+}
 
-  & [class^='text_'] {
-    text-shadow: 0px 0px 8px var(--txt-dark),
-      -1px -1px 0 var(--txt-dark),
-      0 -1px 0 var(--txt-dark),
-      1px -1px 0 var(--txt-dark),
-      1px 0 0 var(--txt-dark),
-      1px 1px 0 var(--txt-dark),
-      0 1px 0 var(--txt-dark),
-      -1px 1px 0 var(--txt-dark),
-      -1px 0 0 var(--txt-dark);
-  }
+[class^='jumpToPresentBar_'] {
+  left: 0;
+  right: 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--bg-0);
+  opacity: 100%;
 }
 
 /* fix DecodeBase64 icon color */

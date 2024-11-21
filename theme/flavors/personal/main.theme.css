@@ -13,9 +13,10 @@
 
 /* modules */
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
-@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css");
-@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/chat-indicators.css");
-@import url("https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/more-compact.css");
 
 /* theme overrides */
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/personal/overrides.css');
+
+:root {
+  --panel-roundness: 16px;
+}

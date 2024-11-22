@@ -50,14 +50,18 @@
 }
 
 /* footer buttons' animation */
-[class^='circleIconButton_'] {
+[class^='footer_'] [class^='circleIconButton_'] {
   & svg {
     scale: 1;
     transition: color .15s ease-out, scale .15s ease-out, rotate .5s ease-out;
   }
 
-  &[class*='selected_'] svg {
-    scale: 1.2;
-    rotate: 180deg;
+  &[class*='selected_'] {
+    background-color: var(--bg-brand);
+
+    svg {
+      scale: 1.2;
+      rotate: 180deg;
+    }
   }
 }

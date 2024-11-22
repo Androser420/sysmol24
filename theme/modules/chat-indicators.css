@@ -9,13 +9,24 @@
   color: var(--txt-1) !important;
 }
 
-[class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
-  background: var(--bg-0) !important;
-}
-
 /* indicators */
-:has([class^='form_'] [class^='typing_']) [class^='channelBottomBarArea_'] {
-  margin-top: -3px;
+:has([class^='typing_']) {
+  [class^='channelBottomBarArea_'] {
+    margin-top: -3px;
+  }
+
+  [class^=chatContent_] {
+
+    [class^=scroller_],
+    >[class^=messagesWrapper_] {
+      border-bottom-left-radius: var(--panel-roundness) !important;
+      border-bottom-right-radius: var(--panel-roundness) !important;
+    }
+
+    >[class^=messagesWrapper_] {
+      margin-bottom: 0 !important;
+    }
+  }
 }
 
 [class^='form_'] [class^='typing_'] {

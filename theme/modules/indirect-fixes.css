@@ -66,72 +66,31 @@
 
 /* fix typing indicators */
 [class^='form_'] [class^='typing_'] {
-  background: var(--bg-0);
   border-bottom-left-radius: var(--panel-roundness);
   border-bottom-right-radius: var(--panel-roundness);
 
   >[class^='typingDots_'] {
-    margin-left: calc(var(--panel-roundness) /2);
+    margin-left: var(--txt-pad);
   }
 
   >[class^='cooldownWrapper_'] {
-    margin-right: calc(var(--panel-roundness) /2)
+    margin-right: var(--txt-pad);
   }
 }
 
-[class^='jumpToPresentBar_'] {
-  left: 0;
-  right: 0;
-  padding: 0;
-  border-radius: 0;
-  background: var(--bg-0);
-  opacity: 100%;
-}
+:has([class^='typing_']) [class^=chatContent_] {
 
-/* fix DecodeBase64 icon color */
-[aria-label*="Base64"] {
-  svg {
-    path {
-      stroke: var(--interactive-normal);
-    }
+  [class^=scroller_],
+  >[class^=messagesWrapper_] {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
   }
 
-  &:hover svg path {
-    stroke: var(--interactive-hover);
-    background-color: var(--background-modifier-hover)
+  >[class^=messagesWrapper_] {
+    margin-bottom: 22px;
   }
 }
 
-/* MemberCount support (very basic) */
-[class*='vc-membercount-widget'] {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-}
-
-[class*='vc-membercount-member-list'] {
-  justify-content: center;
-  margin: 1em 0 -.5em !important;
-  padding-inline: 2em;
-}
-
-[class*='vc-membercount-online-dot'],
-[class*='vc-membercount-total-dot'] {
-  display: none !important;
-  margin-right: .25em;
-}
-
-[class^=members_]:hover {
-  & [class*='vc-membercount-widget'] {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-  }
-
-  & [class*='vc-membercount-online-dot'],
-  [class*='vc-membercount-total-dot'] {
-    display: inline-flex !important
-  }
+[class^='chatContent_']:has([class^='typing_'])>[class^='messagesWrapper_']>[class^='jumpToPresentBar_'] {
+  margin-bottom: 0 !important;
 }

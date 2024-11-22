@@ -270,7 +270,7 @@
 [class^='circleIconButton_'] {
   background-color: var(--bg-1);
 
-  &[class*='selected_'] svg {
+  &[class*='selected_'] {
     color: var(--white);
   }
 }

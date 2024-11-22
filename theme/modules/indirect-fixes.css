@@ -78,6 +78,15 @@
   }
 }
 
+[class^='jumpToPresentBar_'] {
+  left: 0;
+  right: 0;
+  padding: 0;
+  border-radius: 0;
+  background: var(--bg-0);
+  opacity: 100%;
+}
+
 :has([class^='typing_']) [class^=chatContent_] {
 
   [class^=scroller_],

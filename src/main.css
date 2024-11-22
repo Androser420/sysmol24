@@ -155,6 +155,11 @@
   border-top-right-radius: var(--ui-floating-radius);
   transition: width ease 0.25s;
 
+  [class^='nav_'],
+  [class^='header_'] {
+    overflow: hidden;
+  }
+
   &:hover {
     width: var(--sidebar-width);
 

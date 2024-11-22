@@ -49,6 +49,11 @@
   width: 120px;
 }
 
+/* message hover bar */
+[class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
+  background: var(--bg-1) !important;
+}
+
 /* discovery button animation */
 [class^='footer_'] [class^='circleIconButton_'] {
   & svg {

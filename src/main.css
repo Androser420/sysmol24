@@ -261,8 +261,13 @@
   margin-left: 20%;
 }
 
-[class^='circleIconButton_'] { /* footer buttons */
-    background-color: var(--bg-1);
+/* footer buttons */
+[class^='circleIconButton_'] {
+  background-color: var(--bg-1);
+
+  &[class*='selected_'] svg {
+    color: var(--white);
+  }
 }
 
 /* rounding fixes */

@@ -5,48 +5,46 @@
 
 /* fix DecodeBase64 icon color */
 [aria-label*="Base64"] {
-  svg {
-    path {
-      stroke: var(--interactive-normal);
-    }
+  path {
+    stroke: var(--interactive-normal);
   }
 
-  &:hover svg path {
+  &:hover path {
     stroke: var(--interactive-hover);
     background-color: var(--background-modifier-hover)
   }
 }
 
 /* MemberCount support (very basic) */
-[class*='vc-membercount-widget'] {
+.vc-membercount-widget {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
 }
 
-[class*='vc-membercount-member-list'] {
+.vc-membercount-member-list {
   justify-content: center;
   margin: 1em 0 -.5em !important;
-  padding-inline: 2em;
+  padding-inline: 0;
 }
 
-[class*='vc-membercount-online-dot'],
-[class*='vc-membercount-total-dot'] {
+.vc-membercount-online-dot,
+.vc-membercount-total-dot {
   display: none !important;
   margin-right: .25em;
 }
 
 [class^=members_]:hover {
-  & [class*='vc-membercount-widget'] {
+  .vc-membercount-widget {
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
   }
 
-  & [class*='vc-membercount-online-dot'],
-  [class*='vc-membercount-total-dot'] {
+  .vc-membercount-online-dot,
+  .vc-membercount-total-dot {
     display: inline-flex !important
   }
 }

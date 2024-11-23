@@ -67,18 +67,19 @@
     text-overflow: ellipsis;
     overflow: hidden;
     place-self: center;
-    width: auto;
+    width: auto !important;
     display: flex;
     flex-direction: column;
     margin-bottom: 0 !important;
     bottom: var(--txt-pad);
     right: 0;
-    left: 0;
+    left: 0 !important;
     border-radius: var(--panel-roundness);
     padding-bottom: 0 !important;
     background-color: color-mix(in oklch, var(--bg-2), transparent 25%);
     backdrop-filter: blur(3px);
-    transition: opacity.15s;
+    transition: opacity.15s !important;
+    border: 0 !important;
 
     &:hover {
       opacity: 1 !important
@@ -87,5 +88,20 @@
 
   &:has([class^='typing_']) [class^='jumpToPresentBar_'] {
     bottom: 36px;
+  }
+
+  &:has([class^='jumpToPresentBar_'], [class^='typing_']) {
+
+    [class^=scroller_],
+    >[class^=messagesWrapper_] {
+      border-bottom-left-radius: var(--panel-roundness) !important;
+      border-bottom-right-radius: var(--panel-roundness) !important;
+    }
+  }
+}
+
+:has([class^='jumpToPresentBar_']) [class^='chatContent_']:not(:has([class^='typing_'])) {
+  >[class^=messagesWrapper_] {
+    margin-bottom: 0 !important;
   }
 }

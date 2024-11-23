@@ -85,7 +85,7 @@
   padding: 0;
   border-radius: 0;
   background: var(--bg-0);
-  opacity: 100%;
+  opacity: 1;
 }
 
 [class^=chatContent_]:has([class^='jumpToPresentBar_'], [class^='typing_']) {
@@ -116,8 +116,8 @@
 [class^='chatContent_']:not(:has([class^='typing_'])) [class^='jumpToPresentBar_'] {
   border-bottom-left-radius: var(--panel-roundness) !important;
   border-bottom-right-radius: var(--panel-roundness) !important;
-  margin-bottom: -26px !important;
-  width: 100% !important;
+  margin-bottom: -26px;
+  width: 100%;
   left: -2px;
   border: var(--border-width) solid var(--border-color);
   border-top: none;

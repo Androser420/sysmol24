@@ -65,6 +65,7 @@
 }
 
 /* fix typing indicators */
+/* currently kinda unoptimized but functional */
 [class^='form_'] [class^='typing_'] {
   border-bottom-left-radius: var(--panel-roundness);
   border-bottom-right-radius: var(--panel-roundness);
@@ -87,19 +88,45 @@
   opacity: 100%;
 }
 
-:has([class^='typing_']) [class^=chatContent_] {
+[class^=chatContent_]:has([class^='jumpToPresentBar_'], [class^='typing_']) {
 
   [class^=scroller_],
   >[class^=messagesWrapper_] {
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
   }
+}
 
+:has([class^='typing_']) [class^=chatContent_] {
   >[class^=messagesWrapper_] {
     margin-bottom: 22px;
   }
 }
 
+:has([class^='jumpToPresentBar_']) [class^='chatContent_']:not(:has([class^='typing_'])) {
+  >[class^=messagesWrapper_] {
+    margin-bottom: 24px;
+  }
+}
+
 [class^='chatContent_']:has([class^='typing_'])>[class^='messagesWrapper_']>[class^='jumpToPresentBar_'] {
   margin-bottom: 0 !important;
+}
+
+[class^='chatContent_']:not(:has([class^='typing_'])) [class^='jumpToPresentBar_'] {
+  border-bottom-left-radius: var(--panel-roundness) !important;
+  border-bottom-right-radius: var(--panel-roundness) !important;
+  margin-bottom: -26px !important;
+  width: 100% !important;
+  left: -2px;
+  border: var(--border-width) solid var(--border-color);
+  border-top: none;
+  transition: border-color var(--border-transition);
+}
+
+/* fix border hover effect */
+[class^='chatContent_']:has(> [class^=messagesWrapper_]:hover, [class^='jumpToPresentBar_']:hover) {
+  [class^='jumpToPresentBar_'] {
+    border-color: var(--border-hover-color);
+  }
 }

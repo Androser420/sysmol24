@@ -101,7 +101,7 @@
     margin-bottom: 22px;
   }
 
-  & [class*='scroller_'] {
+  [class^='scroller_'] {
     margin-bottom: -22px;
   }
 }

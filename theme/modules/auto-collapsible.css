@@ -1,0 +1,105 @@
+/**
+ * @name auto collapsible | sysmol24
+ * @description Float theme inspired module that expands or hides certain panels when app window size changes.
+*/
+
+@media (max-height: 500px) {
+  [class^=subtitleContainer_] {
+    display: none
+  }
+}
+
+@media (max-width: 700px) {
+
+  [class^='chat_']>[class^='content_']>[class^='container_'],
+  [class^="membersWrap_"] {
+    display: none
+  }
+}
+
+@media (max-width: 600px) {
+  [class^=sidebar_] {
+    display: none
+  }
+}
+
+@media (max-width: 500px) {
+  [class*='guilds_'] {
+    display: none
+  }
+
+  [class^='container_'][aria-label^="Friends"],
+  [class^=chat_] {
+    margin-left: var(--pad)
+  }
+}
+
+@media (min-width: 1150px) {
+  [class^=sidebar_] {
+    transition: width ease 0.25s;
+    width: var(--sidebar-width);
+
+    >[class^='container_']::after {
+      content: 'server';
+    }
+
+    [class^='nav_'],
+    [class^='header_'] {
+      overflow: hidden;
+    }
+
+    [type*="button"],
+    [id='vc-spotify-progress-bar'] [class^='bar_'],
+    [aria-label="Total Duration"] {
+      display: flex;
+    }
+
+    [class*="avatarWrapper_"]>[class*="avatar_"],
+    [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
+      margin: auto;
+    }
+
+    .vc-spotify-time-left {
+      left: 6px;
+    }
+
+    [class^=channelNotice] {
+
+      [class^=stageIcon],
+      [class*=liveNowText] {
+        display: block;
+      }
+    }
+
+    & [class^=channelNotice] {
+
+      [class^=stageIcon],
+      [class*=liveNowText] {
+        display: none;
+      }
+
+      >[class*=joinButton] {
+        min-width: 0;
+      }
+
+      >[class*=singleLine_] {
+        white-space: wrap;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  [class^=membersWrap_] {
+    transition: min-width ease 0.25s, border var(--border-transition);
+    min-width: var(--sidebar-width);
+
+    >[class^=members_] {
+      min-width: inherit;
+    }
+
+    &::after {
+      content: 'members';
+    }
+  }
+}

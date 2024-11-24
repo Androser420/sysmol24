@@ -92,8 +92,8 @@
 
 ### Modules
 You can now spice up your flavor with add-ons inside the `/theme/modules` folder!  
-If you've picked one you like, simply insert them as usual.  
-- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/extra-collapsible.css');`  
+If you've picked one you like, simply insert them using QuickCSS.  
+- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/auto-collapsible.css');`  
     <small>*(or just install it through the link itself)*</small>
 
 ## Credits

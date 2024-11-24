@@ -96,7 +96,7 @@
   }
 }
 
-:has([class^='typing_']) [class^=chatContent_]:has([class^='jumpToPresentBar_']) {
+:has([class^='typing_']) [class^=chatContent_] {
   >[class^=messagesWrapper_] {
     margin-bottom: 22px;
   }

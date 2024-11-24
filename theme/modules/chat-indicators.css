@@ -19,12 +19,9 @@
 
     [class^=scroller_],
     >[class^=messagesWrapper_] {
+      margin-bottom: unset !important;
       border-bottom-left-radius: var(--panel-roundness) !important;
       border-bottom-right-radius: var(--panel-roundness) !important;
-    }
-
-    >[class^=messagesWrapper_] {
-      margin-bottom: 0 !important;
     }
   }
 }
@@ -74,7 +71,7 @@
     bottom: var(--txt-pad);
     right: 0;
     left: 0 !important;
-    border-radius: var(--panel-roundness);
+    border-radius: var(--panel-roundness) !important;
     padding-bottom: 0 !important;
     background-color: color-mix(in oklch, var(--bg-2), transparent 25%);
     backdrop-filter: blur(3px);

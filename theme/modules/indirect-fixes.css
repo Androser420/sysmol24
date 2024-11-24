@@ -67,7 +67,7 @@
 /* fix typing indicators */
 [class^='chatContent_']:not(:has([class^='typing_'])) [class^='jumpToPresentBar_'],
 [class^='form_'] [class^='typing_'] {
-  border-radius: 0 0 var(--panel-roundness) var(--panel-roundness) !important;
+  border-radius: 0 0 var(--panel-roundness) var(--panel-roundness);
 
   >[class^='typingDots_'] {
     margin-left: 4px;
@@ -99,6 +99,10 @@
 :has([class^='typing_']) [class^=chatContent_] {
   >[class^=messagesWrapper_] {
     margin-bottom: 22px;
+  }
+
+  & [class*='scroller_'] {
+    margin-bottom: -22px;
   }
 }
 

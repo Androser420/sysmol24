@@ -1,5 +1,5 @@
 [class^=sidebar_] {
-  & [class^='barFill_'] {
+  [class^='barFill_'] {
     opacity: 75%;
     background: rgb(220, 220, 220);
     transition: background ease 0.25s;
@@ -10,19 +10,15 @@
       content: 'yoy!';
     }
 
-    &:hover::after {
-      content: 'literally yoy!';
-    }
-  }
+    &:hover {
+      &::after {
+        content: 'literally yoy!';
+      }
 
-  &:hover {
-    [class^='privateChannels_']::after {
-      content: 'dms / gcs';
-    }
-
-    [class^='barFill_'] {
-      opacity: 100%;
-      background: var(--control-brand-foreground-new);
+      [class^='barFill_'] {
+        opacity: 100%;
+        background: var(--control-brand-foreground-new);
+      }
     }
   }
 }

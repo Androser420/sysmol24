@@ -24,11 +24,6 @@
   }
 }
 
-[class^='textArea_'] [class*='fontSize16Padding_'] {
-  padding-bottom: 17px !important;
-  padding-top: 17px !important;
-}
-
 /* fix app button rounding */
 [class^="channelAppLauncher_"] {
   & [class^="button_"] {

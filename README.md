@@ -39,6 +39,12 @@
 
 ![light](/assets/light.png)
 </details>
+<details><summary>Spotify</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/spotify-text/main.theme.css`
+
+![spotify](/assets/spotify.png)
+</details>
 
 ---
 
@@ -63,12 +69,6 @@
 
 ![gruvbox](/assets/gruvbox.png)
 </details>
-<details><summary>Spotify</summary>
-
-- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/spotify-text/main.theme.css`
-
-![spotify](/assets/spotify.png)
-</details>
 <details><summary>Vencord</summary>
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/vencord/main.theme.css`
@@ -86,6 +86,12 @@
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/rosepine/main.theme.css`
 
 ![rosepine](/assets/rosepine.png)
+</details>
+<details><summary>Night Owl</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/night-owl/main.theme.css`
+
+![nightowl](/assets/nightowl.png)
 </details>
 
 ---

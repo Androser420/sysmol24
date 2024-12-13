@@ -218,6 +218,11 @@ html:not(.visual-refresh_a4d4d9) .sidebar_a4d4d9 {
 }
 
 ul {
+  [class^='footer'] {
+    background: none;
+    margin-top: unset;
+  }
+
   [class^='gradient'] {
     background: var(--bg-overlay-app-frame, var(--background-tertiary))
   }

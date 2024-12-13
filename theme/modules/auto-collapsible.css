@@ -50,9 +50,9 @@
 }
 
 @media (min-width: 1150px) {
-  [class^=sidebar_] {
+  html:not(.visual-refresh_a4d4d9) .sidebar_a4d4d9 {
     transition: width ease 0.25s;
-    width: var(--sidebar-width);
+    width: var(--sidebar-width) !important;
 
     >[class^='container_']::after {
       content: 'server';

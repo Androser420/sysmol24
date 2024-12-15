@@ -13,9 +13,9 @@
 1. Go the [default theme file](https://github.com/Androser420/sysmol24/blob/main/theme/sysmol24.theme.css) or choose a flavor from the options below.
 2. Click the Download button in the top right.
 3. Move the downloaded file into your theme folder.  
-<small>*(there should be a button to open the theme folder in theme settings)*</small>
+*(there should be a button to open the theme folder in theme settings)*
 4. You may need to enable the theme in your theme settings by clicking a toggle switch.
-5. <small>(optional)</small> Customize the theme by copying and editing the root variables from `/src/main.css` to your `sysmol24.theme.css`.
+5. (optional) Customize the theme by copying and editing the root variables from `/src/main.css` to your `sysmol24.theme.css`.
 
 ### 2. Install through link
 
@@ -26,12 +26,11 @@
 > [!NOTE]  
 > Rounding is enabled by default, if you want otherwise, insert [unrounding.css](https://refact0r.github.io/system24/src/unrounding.css) yourself!
 
-<details><summary>Dark <small>(default)</small></summary>
+<details><summary>Dark (default)</summary>
 
-- **Includes unrounding.css**
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/sysmol24.theme.css`
 
-![default](/assets/default.png)
+![default](/assets/dark.png)
 </details>
 <details><summary>Light</summary>
 
@@ -43,7 +42,7 @@
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/spotify-text/main.theme.css`
 
-![spotify](/assets/spotify.png)
+![spotify](/assets/spotify-text.png)
 </details>
 
 ---
@@ -52,22 +51,28 @@
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-macchiato/main.theme.css`
 
-![macchiato](/assets/macchiato.png)
+![macchiato](/assets/catppuccin-macchiato.png)
 </details>
 <details><summary>Catppuccin Mocha</summary>
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-mocha/main.theme.css`
 
-![mocha](/assets/mocha.png)
+![mocha](/assets/catppuccin-mocha.png)
 </details>
 
 ---
 
+<details><summary>Monochrome</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/monochrome/main.theme.css`
+
+![monochrome](/assets/monochrome.png)
+</details>
 <details><summary>Gruvbox Material</summary>
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/gruvbox-material/main.theme.css`
 
-![gruvbox](/assets/gruvbox.png)
+![gruvbox](/assets/gruvbox-material.png)
 </details>
 <details><summary>Vencord</summary>
 
@@ -91,7 +96,7 @@
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/night-owl/main.theme.css`
 
-![nightowl](/assets/nightowl.png)
+![night-owl](/assets/night-owl.png)
 </details>
 
 ---
@@ -100,7 +105,7 @@
 You can now spice up your flavor with add-ons inside the `/theme/modules` folder!  
 If you've picked one you like, simply insert them using QuickCSS.  
 - e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/auto-collapsible.css');`  
-    <small>*(or just install it through the link itself)*</small>
+    *(or just install it through the link itself)*
 
 ## Credits
 > [system24](https://github.com/refact0r/system24) - original theme on which sysmol24 is based  

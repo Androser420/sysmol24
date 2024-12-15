@@ -85,7 +85,8 @@ html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
   transition: width ease 0.25s;
 
   [class^='nav_'],
-  [class^='header_'] {
+  [class^='header_'],
+  .vc-spotify-button-row {
     overflow: hidden;
   }
 
@@ -94,8 +95,9 @@ html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
 
     [type*="button"],
     [id='vc-spotify-progress-bar'] [class^='bar_'],
-    [aria-label="Total Duration"] {
-      display: flex;
+    [aria-label="Total Duration"],
+    .vc-spotify-button-row {
+      display: flex !important;
     }
 
     [class*="avatarWrapper_"]>[class*="avatar_"],
@@ -180,14 +182,20 @@ html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
 }
 
 /* other system24 related fixes */
+.vc-userAreaStyles {
+  display: flex !important;
+  height: 60px !important;
+}
+
 [class^='panels_'] {
   & [class^="avatarWrapper"] {
     min-width: 0;
   }
 
   & [type*="button"],
-  [aria-label="Total Duration"] {
-    display: none;
+  [aria-label="Total Duration"],
+  .vc-spotify-button-row {
+    display: none !important;
   }
 }
 

@@ -1,0 +1,30 @@
+/**
+ * @name spotify buttons | sysmol24
+ * @description a module that animates and makes spotify play/pause visible at all times.
+*/
+
+[class^='panels_'] {
+  & [class^='vc-spotify-button'] {
+    display: flex !important;
+    visibility: hidden;
+    transition: visibility 0.2s ease;
+
+    & [class*='vc-spotify-pause'],
+    [class*='vc-spotify-play'] {
+      visibility: visible;
+    }
+  }
+}
+
+html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
+  .vc-spotify-button-row {
+    overflow: hidden;
+  }
+
+  &:hover {
+
+    & [class^='vc-spotify-button'] {
+      visibility: visible !important;
+    }
+  }
+}

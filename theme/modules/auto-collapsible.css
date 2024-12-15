@@ -49,8 +49,8 @@
   }
 }
 
-@media (min-width: 1150px) {
-  html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
+@media (min-width: 1200px) {
+  html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     transition: width ease 0.25s;
     width: var(--sidebar-width) !important;
 

@@ -80,7 +80,7 @@
 }
 
 /* sidebar */
-html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
+html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   width: var(--collapsed-sidebar-width) !important;
   transition: width ease 0.25s;
 

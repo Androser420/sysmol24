@@ -50,7 +50,7 @@
 }
 
 @media (min-width: 1150px) {
-  html:not(.visual-refresh_a4d4d9) .sidebar_a4d4d9 {
+  html:not(.visual-refresh) .sidebar_a4d4d9:not(.hidden_a4d4d9) {
     transition: width ease 0.25s;
     width: var(--sidebar-width) !important;
 

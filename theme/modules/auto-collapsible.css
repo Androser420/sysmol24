@@ -65,8 +65,9 @@
 
     [type*="button"],
     [id='vc-spotify-progress-bar'] [class^='bar_'],
-    [aria-label="Total Duration"] {
-      display: flex;
+    [aria-label="Total Duration"],
+    .vc-spotify-button-row {
+      display: flex !important;
     }
 
     [class*="avatarWrapper_"]>[class*="avatar_"],

@@ -13,17 +13,7 @@
   --txt-pad: 3px;
 }
 
-/* hide cooldown text (remove if you want it back) */
-[class^='jumpToPresentBar_']>[class^="barButtonMain_"] {
-  display: none !important;
-}
-
 [class^='channelBottomBarArea_'] {
-  & [class*='fontSize16Padding_'] {
-    padding-bottom: 11px !important;
-    padding-top: 11px !important;
-  }
-
   & [class*='slateTextArea_'] {
     padding-right: 0;
     right: 0;
@@ -37,11 +27,20 @@
     }
   }
 
-  & [class*="buttons_"] button {
+  & [class*='buttons_'] button {
     width: 32px;
   }
 }
 
-[class*='guilds_'] {
-  padding-top: unset;
+.vc-userAreaStyles {
+  height: unset !important;
+}
+
+[class^='subtitleContainer_'] [class*='iconWrapper_'] {
+  margin: 0 4px;
+}
+
+/* hide cooldown text (remove if you want it back) */
+[class^='jumpToPresentBar_']>[class^="barButtonMain_"] {
+  display: none !important;
 }

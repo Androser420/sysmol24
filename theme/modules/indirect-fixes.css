@@ -24,6 +24,12 @@
   }
 }
 
+/* old profile buttons' position */
+.vc-userAreaStyles {
+  display: flex !important;
+  height: 60px !important;
+}
+
 /* fix app button rounding */
 [class^="channelAppLauncher_"] {
   & [class^="button_"] {

@@ -179,11 +179,6 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
 }
 
 /* other system24 related fixes */
-.vc-userAreaStyles {
-  display: flex !important;
-  height: 60px !important;
-}
-
 [class^='panels_'] {
   & [class^="avatarWrapper"] {
     min-width: 0;

@@ -3,6 +3,12 @@
  * @description a module that makes some external plugins from vencord/equicord more compatible.
 */
 
+/* BetterUserArea override */
+.vc-userAreaStyles {
+  display: flex !important;
+  height: var(--custom-channel-textarea-text-area-height) !important;
+}
+
 /* fix DecodeBase64 icon color */
 [aria-label*="Base64"] {
   path {

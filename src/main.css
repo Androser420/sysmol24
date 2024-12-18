@@ -119,6 +119,19 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     }
   }
 
+  & [class^=spine_] {
+    left: 6px;
+  }
+
+  & [class^=linkTop] {
+    display: flex;
+    flex-direction: row-reverse;
+
+    [class^=sidebar]:not(:hover) & [role=img] {
+      display: none
+    }
+  }
+
   & [class^=channelNotice] {
 
     [class^=stageIcon],
@@ -165,22 +178,6 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   }
 }
 
-/* changes suggested by @andrew6rant */
-[class^=spine_] {
-  left: 6px;
-}
-
-[class*=wrapper_][class*=typeThread_] {
-  margin-left: 50px;
-}
-
-[class^=link_][role="link"],
-[class^=link_][role="button"] {
-  padding: 6px 0 6px 0;
-  right: 28px;
-  margin-right: -28px;
-}
-
 /* other system24 related fixes */
 .vc-userAreaStyles {
   display: flex !important;
@@ -213,16 +210,12 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
 }
 
 /* rounding fixes */
-[class^="base"] {
-
-  [class^=members],
-  >[class^=content_]>[class^=chat_]>[class^=subtitleContainer_]>[class^=title_],
-  >[class^=content_]>[class^=chat_]>[class^=content_]>[class^=chatContent_],
-  [class^='messagesWrapper_'] [class^=scroller_],
-  [class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
-  [class^='nowPlayingColumn_']>[class^='container_'] {
-    border-radius: var(--panel-roundness);
-  }
+[class^=members],
+[class^='messagesWrapper_'] [class^=scroller_],
+[class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
+[class^='nowPlayingColumn_']>[class^='container_'],
+[class^=chatContent_] {
+  border-radius: var(--panel-roundness);
 }
 
 ul {

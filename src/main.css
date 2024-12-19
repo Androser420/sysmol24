@@ -77,18 +77,30 @@
   --profile-width: 340px;
   --ui-margin-value: 12px;
   --ui-floating-radius: 8px;
+  --collapse-transition: 0.25s ease;
+}
+
+/* profile panel */
+[class^='panels_'] {
+  [class^='container_'] {
+    padding: 8px;
+  }
+
+  [class^="avatarWrapper"] {
+    min-width: 0;
+  }
+
+  [type*="button"],
+  [aria-label="Total Duration"],
+  .vc-spotify-button-row {
+    display: none !important;
+  }
 }
 
 /* sidebar */
 html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   width: var(--collapsed-sidebar-width) !important;
-  transition: width ease 0.25s;
-
-  [class^='nav_'],
-  [class^='header_'],
-  .vc-spotify-button-row {
-    overflow: hidden;
-  }
+  transition: width var(--collapse-transition);
 
   &:hover {
     width: var(--sidebar-width) !important;
@@ -119,11 +131,37 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     }
   }
 
-  & [class^=spine_] {
-    left: 6px;
+  &:not(:hover) {
+    [class^='avatarWrapper_'] {
+      overflow: hidden;
+      padding: 8px;
+      /* should be 0 but isnt cuz of avatar decorations */
+      margin: 0;
+
+      >[class*='avatar_'] {
+        margin: 0;
+      }
+    }
+
+    [class^='panels_'] {
+      [class^='container_'] {
+        padding: 0 !important;
+        place-content: center;
+      }
+    }
+
+    [class^='nameTag_'] {
+      display: none;
+    }
   }
 
-  & [class^=linkTop] {
+  [class^='nav_'],
+  [class^='header_'],
+  .vc-spotify-button-row {
+    overflow: hidden;
+  }
+
+  [class^=linkTop] {
     display: flex;
     flex-direction: row-reverse;
 
@@ -132,7 +170,7 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     }
   }
 
-  & [class^=channelNotice] {
+  [class^=channelNotice] {
 
     [class^=stageIcon],
     [class*=liveNowText] {
@@ -156,7 +194,7 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   &,
   >[class^=members_] {
     width: var(--collapsed-member-list-width);
-    transition: width ease 0.25s;
+    transition: width var(--collapse-transition);
   }
 
   &:hover,
@@ -167,7 +205,7 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
 
 [class^='content_']>[class^='outer_'] {
   width: var(--collapsed-profile-width);
-  transition: width ease 0.25s;
+  transition: width var(--collapse-transition);
 
   >[class^='inner_'] {
     border-radius: calc(var(--panel-roundness) - var(--txt-pad) - 2px);
@@ -176,23 +214,6 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   &:hover {
     width: var(--profile-width);
   }
-}
-
-/* other system24 related fixes */
-[class^='panels_'] {
-  & [class^="avatarWrapper"] {
-    min-width: 0;
-  }
-
-  & [type*="button"],
-  [aria-label="Total Duration"],
-  .vc-spotify-button-row {
-    display: none !important;
-  }
-}
-
-[class^="avatarWrapper_"]>[class*="avatar_"] {
-  margin-left: 20%;
 }
 
 /* footer buttons */

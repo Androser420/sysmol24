@@ -1,0 +1,28 @@
+/**
+ * @name dynamic panels | sysmol24
+ * @description a module that adjusts sidebar and member list width dynamically. (will probably break a few things)
+*/
+
+:root {
+  --collapsed-sidebar-width: 7vw;
+  --collapsed-member-list-width: 7vw;
+}
+
+html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
+  &:not(:hover) {
+    [class*='privateChannelsHeaderContainer_'] {
+      padding: 18px 0 4px 8px;
+    }
+  }
+}
+
+[class*='privateChannelsHeaderContainer_'],
+ul [class*='layout_'] {
+  transition: padding var(--collapse-transition);
+}
+
+[class^='membersWrap_']:not(:hover) [class^=member],
+ul:not(:hover) [class*='layout_'] {
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -16,6 +16,10 @@
     margin-left: 0;
     padding: 0;
   }
+
+  [class^='unread_'] {
+    left: 0;
+  }
 }
 
 .thin_eed6a8::-webkit-scrollbar {
@@ -28,12 +32,12 @@
 }
 
 [class^='channelBottomBarArea_'] {
-  & [class*='slateTextArea_'] {
+  [class*='slateTextArea_'] {
     padding-right: 0;
     right: 0;
   }
 
-  & [class*='attachButton_'] {
+  [class*='attachButton_'] {
     padding: 12px;
 
     svg {
@@ -41,7 +45,7 @@
     }
   }
 
-  & [class*='buttons_'] button {
+  [class*='buttons_'] button {
     width: 32px;
   }
 }

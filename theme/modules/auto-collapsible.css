@@ -35,6 +35,13 @@
 }
 
 @media (min-width: 1300px) {
+  [class^='content_']>[class^='outer_'] {
+    width: var(--profile-width) !important;
+    transition: width var(--collapse-transition);
+  }
+}
+
+@media (min-width: 1200px) {
   [class^=membersWrap_] {
     transition: min-width ease 0.25s, border var(--border-transition);
     min-width: var(--sidebar-width);
@@ -45,52 +52,6 @@
 
     &::after {
       content: 'members';
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
-    transition: width ease 0.25s;
-    width: var(--sidebar-width) !important;
-
-    >[class^='container_']::after {
-      content: 'server';
-    }
-
-    [class^='nav_'],
-    [class^='header_'] {
-      overflow: hidden;
-    }
-
-    [type*="button"],
-    [id='vc-spotify-progress-bar'] [class^='bar_'],
-    [aria-label="Total Duration"],
-    .vc-spotify-button-row {
-      display: flex !important;
-    }
-
-    [class*="avatarWrapper_"]>[class*="avatar_"],
-    [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
-      margin: auto;
-    }
-
-    .vc-spotify-time-left {
-      left: 6px;
-    }
-
-    [class^=channelNotice] {
-
-      [class^=stageIcon],
-      [class*=liveNowText] {
-        display: block;
-      }
-    }
-
-    [class^=linkTop] {
-      [class^=sidebar]:not(:hover) & [role=img] {
-        display: block !important
-      }
     }
   }
 }

@@ -15,7 +15,7 @@
 }
 
 [class^='sidebar_'] {
-  &>[class^='container_']::after {
+  >[class^='container_']::after {
     content: 'ser…';
   }
 
@@ -26,11 +26,11 @@
 
 /* fix app button rounding */
 [class^="channelAppLauncher_"] {
-  & [class^="button_"] {
+  [class^="button_"] {
     transform: scale(0.5);
   }
 
-  & [class^="lottieIcon_"] {
+  [class^="lottieIcon_"] {
     transform: scale(2);
   }
 }
@@ -44,17 +44,20 @@
   }
 }
 
-[class^='container_'][aria-label^="Friends"] {
-  padding-top: 10px;
-  margin-top: -10px;
+[class^='container_'][aria-label^="Friends"],
+[class^='applicationStore_'],
+[class^='shopScroll_'] {
+  /* shop bit broken but not cut off */
+  padding-top: 8px;
+  margin-top: -8px;
 }
 
 [class^='peopleList_'] {
-  & [class*='discriminator_'] {
+  [class*='discriminator_'] {
     display: none;
   }
 
-  & [class*='hovered_'] [class*='discriminator_'] {
+  [class*='hovered_'] [class*='discriminator_'] {
     display: flex;
   }
 }

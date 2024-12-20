@@ -8,6 +8,20 @@
   --profile-width: 320px;
 }
 
+/* compact channels */
+.containerDefault_f6f816 {
+
+  [class*='wrapper_'],
+  [class*='iconItem_'] {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+.thin_eed6a8::-webkit-scrollbar {
+  width: 0;
+}
+
 [class^='content_']>[class^='outer_'] {
   padding: 3px;
   --txt-pad: 3px;

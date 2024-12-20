@@ -1,8 +1,13 @@
+/**
+ * @name personal overrides | sysmol24
+ * @description my personal css theme overrides.
+*/
+
 [class^=sidebar_] {
   [class^='barFill_'] {
     opacity: 75%;
-    background: rgb(220, 220, 220);
-    transition: background ease 0.25s;
+    background: var(--text-normal);
+    transition: background var(--border-transition);
   }
 
   & [class^='panels_'] {
@@ -45,12 +50,18 @@
   width: 120px;
 }
 
+.theme-dark,
+html.theme-light {
+  --scrollbar-thin-thumb: display: none;
+  --scrollbar-thin-track: display: none;
+}
+
 /* message hover bar */
 [class^='buttonContainer_'] [class*='popoverReactionHoverBar_'] {
   background: var(--bg-1) !important;
 }
 
-/* discovery button animation */
+/* discover button animation */
 [class^='footer_'] [class^='circleIconButton_'] {
   & svg {
     scale: 1;

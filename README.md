@@ -47,17 +47,29 @@
 
 ---
 
+<details><summary>Catppuccin Mocha</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-mocha/main.theme.css`
+
+![mocha](/assets/catppuccin-mocha.png)
+</details>
 <details><summary>Catppuccin Macchiato</summary>
 
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-macchiato/main.theme.css`
 
 ![macchiato](/assets/catppuccin-macchiato.png)
 </details>
-<details><summary>Catppuccin Mocha</summary>
+<details><summary>Catppuccin Frappe</summary>
 
-- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-mocha/main.theme.css`
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-frappe/main.theme.css`
 
-![mocha](/assets/catppuccin-mocha.png)
+![frappe](/assets/catppuccin-frappe.png)
+</details>
+<details><summary>Catppuccin Latte</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/catppuccin-latte/main.theme.css`
+
+![latte](/assets/catppuccin-latte.png)
 </details>
 
 ---
@@ -67,6 +79,12 @@
 - `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/monochrome/main.theme.css`
 
 ![monochrome](/assets/monochrome.png)
+</details>
+<details><summary>Monokai-Pro Yellow</summary>
+
+- `https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/flavors/monokai-pro-yellow/main.theme.css`
+
+![monokai](/assets/monokai-pro-yellow.png)
 </details>
 <details><summary>Gruvbox Material</summary>
 

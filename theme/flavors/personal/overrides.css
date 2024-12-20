@@ -77,3 +77,22 @@ html.theme-light {
     }
   }
 }
+
+/* member list top activity */
+[class^='membersWrap_']:not(:hover) {
+  [class*='openOnHover_'] {
+    padding-right: 4px;
+    margin-right: 4px;
+
+    img {
+      overflow: hidden !important;
+      height: 16px !important;
+      width: fit-content;
+      transition: height var(--collapse-transition);
+    }
+
+    .badgeContainer_d60c6d {
+      overflow: visible !important;
+    }
+  }
+}

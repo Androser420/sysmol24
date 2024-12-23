@@ -23,6 +23,7 @@
 
   [class^="avatarWrapper"] {
     min-width: 0;
+    margin-right: 0
   }
 
   [type*="button"],
@@ -136,6 +137,10 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
 [class^=membersWrap_] {
   min-width: 0;
   padding-top: unset;
+
+  >[class^='scroller_'] {
+    top: 0;
+  }
 
   &,
   >[class^=members_] {

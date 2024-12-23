@@ -3,28 +3,31 @@
  * @description various workaround fixes for sysmol24.
 */
 
-/* system24 related changes */
-[class^='membersWrap_'] {
+/* fix panel labels */
+[class^='sidebar_']>[class^='container_'],
+.container_fc4f04,
+[class^='chatContent_']>[class^='messagesWrapper_'],
+[class^='panels_'],
+[class^='form_'] [class^='channelTextArea_'],
+.guilds_a4d4d9,
+[class^='membersWrap_'],
+[class^='privateChannels_'],
+.container_a6d69a,
+[class^='content_']>[class^='outer_'],
+[class^='searchResultsWrap_'],
+.scroller_fb4810,
+[class^='peopleColumn_'],
+[class^='nowPlayingColumn_'] {
   &::after {
-    content: 'mem…';
-  }
-
-  &:hover::after {
-    content: 'members';
-  }
-}
-
-[class^='sidebar_'] {
-  >[class^='container_']::after {
-    content: 'ser…';
-  }
-
-  &:hover>[class^='container_']::after {
-    content: 'server';
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: fit-content;
+    right: 6px;
   }
 }
 
-/* fix app button rounding */
+/* rounding fixes */
+/* app button */
 [class^="channelAppLauncher_"] {
   [class^="button_"] {
     transform: scale(0.5);
@@ -32,6 +35,21 @@
 
   [class^="lottieIcon_"] {
     transform: scale(2);
+  }
+}
+
+/* stacked bars/reply (partial) */
+[class^="channelBottomBarArea_"] {
+  [class^='stackedBars_'] {
+    border-top-left-radius: var(--panel-roundness);
+    border-top-right-radius: var(--panel-roundness);
+  }
+
+  /* (help) works only if these are html removed, not when hidden */
+  &:has([class^="channelAppLauncher_"], [class^='entryPointButtonContainer_']) {
+    [class^='stackedBars_'] {
+      border-top-right-radius: 0;
+    }
   }
 }
 

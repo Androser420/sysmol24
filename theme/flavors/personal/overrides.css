@@ -50,6 +50,22 @@
   width: 120px;
 }
 
+/* color app borders on chat area hover */
+[class^='entryPointButtonContainer_'] {
+  transition: border-color var(--border-transition);
+}
+
+[class^="channelBottomBarArea_"] {
+  &:hover {
+
+    [class^='entryPointButtonContainer_'],
+    [class^="buttonContainer_"] {
+      border-color: var(--border-hover-color);
+      transition: border-color var(--border-transition);
+    }
+  }
+}
+
 .theme-dark,
 html.theme-light {
   --scrollbar-thin-thumb: display: none;

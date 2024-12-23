@@ -11,6 +11,8 @@
 /* compact channels */
 .containerDefault_f6f816 {
 
+  >[class^='list_'],
+  [class^='linkBottom_'],
   [class*='wrapper_'],
   [class*='iconItem_'] {
     margin-left: 0;

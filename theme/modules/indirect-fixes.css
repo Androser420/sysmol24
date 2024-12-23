@@ -35,6 +35,17 @@
   }
 }
 
+/* fix Commands button in bot dms */
+[class^='entryPointButtonContainer_'] {
+  align-content: flex-start;
+  border-left: var(--border-width) solid var(--border-color);
+  margin: 0;
+
+  >[class^='entryPointAppCommandButton_'] {
+    margin: 6px;
+  }
+}
+
 /* collapsible Friends tab */
 [class^='container_'] {
 

@@ -5,25 +5,32 @@
   --corner-text: 'sysmol24';
 
   /* Smol config */
+  --sidebar-width: 240px;
+  --profile-width: 340px;
+  --profile-padding: 8px;
   --collapsed-sidebar-width: 64px;
   --collapsed-member-list-width: 64px;
   --collapsed-profile-width: calc(var(--profile-width) / 2.25);
-  --sidebar-width: 240px;
-  --profile-width: 340px;
-  --ui-margin-value: 12px;
-  --ui-floating-radius: 8px;
   --collapse-transition: 0.25s ease;
 }
 
 /* profile panel */
 [class^='panels_'] {
   [class^='container_'] {
-    padding: 8px;
+    padding: var(--profile-padding);
   }
 
   [class^="avatarWrapper"] {
     min-width: 0;
-    margin-right: 0
+    margin-right: 0;
+
+    [class^='nameTag_'] {
+      padding: 0 inherit;
+    }
+
+    [class^='hoverRoll_'] {
+      vertical-align: text-top;
+    }
   }
 
   [type*="button"],
@@ -197,7 +204,7 @@ ul {
 }
 
 [class^='animatedContainer_'],
-[class^='form_'] [class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'],
+[class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'],
 #vc-spotify-player::after {
   border-radius: var(--panel-roundness) var(--panel-roundness) 0 0 !important;
 }
@@ -206,7 +213,7 @@ ul {
   border-radius: 0 !important;
 }
 
-[class^='nowPlayingColumn_']>[class^='container_'] [class^='scroller_'] {
+[class^='nowPlayingColumn_'] [class^='scroller_'] {
   border-left: 0;
   margin-left: 0;
 }

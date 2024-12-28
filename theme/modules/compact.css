@@ -28,6 +28,11 @@
   width: 0;
 }
 
+[class^='messagesWrapper_']>[class^=scroller_],
+[class^='newMessagesBar_'] {
+  top: 0;
+}
+
 [class^='content_']>[class^='outer_'] {
   padding: 3px;
   --txt-pad: 3px;

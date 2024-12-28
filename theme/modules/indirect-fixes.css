@@ -26,6 +26,15 @@
   }
 }
 
+/* fix discover */
+[class^='sidebar_']>[class^='container_']:has(>[class^='nav_']) {
+  position: relative;
+
+  &::after {
+    content: 'discover';
+  }
+}
+
 /* rounding fixes */
 /* app button */
 [class^="channelAppLauncher_"] {

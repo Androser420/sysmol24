@@ -10,7 +10,7 @@
     transition: background var(--border-transition);
   }
 
-  & [class^='panels_'] {
+  [class^='panels_'] {
     &::after {
       content: 'yoy!';
     }
@@ -23,6 +23,50 @@
       [class^='barFill_'] {
         opacity: 100%;
         background: var(--control-brand-foreground-new);
+      }
+    }
+  }
+
+  &:not(:hover) {
+
+    /* nicer spotify player ui */
+    #vc-spotify-player {
+      padding: var(--txt-pad) 0 0;
+
+      .vc-spotify-time-left {
+        left: 2px;
+        line-height: 0;
+        top: 10px;
+      }
+
+      #vc-spotify-progress-bar {
+        width: 75%;
+        place-self: center;
+      }
+
+      #vc-spotify-titles {
+        padding: 0;
+        display: none;
+      }
+
+      #vc-spotify-info-wrapper {
+        place-self: center;
+      }
+
+      [class^='bar_'],
+      [class^='slider_'] {
+        top: 0;
+        position: unset;
+      }
+
+      [class^='mini_'],
+      [class^='slider_'] {
+        height: unset;
+      }
+
+      [class^='track_'] {
+        right: 0;
+        left: 0;
       }
     }
   }
@@ -50,7 +94,7 @@
   width: 120px;
 }
 
-/* color app borders on chat area hover */
+/* color borders inside chat input on hover */
 [class^='entryPointButtonContainer_'] {
   transition: border-color var(--border-transition);
 }
@@ -79,7 +123,7 @@ html.theme-light {
 
 /* discover button animation */
 [class^='footer_'] [class^='circleIconButton_'] {
-  & svg {
+  svg {
     scale: 1;
     transition: color .15s ease-out, scale .15s ease-out, rotate .5s ease-out;
   }

@@ -5,6 +5,7 @@
   --corner-text: 'sysmol24';
 
   /* Smol config */
+  --member-list-width: 244px;
   --sidebar-width: 240px;
   --profile-width: 340px;
   --profile-padding: 8px;
@@ -157,7 +158,7 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
 
   &:hover,
   >[class^=members_]:hover {
-    width: var(--sidebar-width);
+    width: var(--member-list-width);
   }
 }
 

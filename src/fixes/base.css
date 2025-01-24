@@ -1,0 +1,66 @@
+html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
+  &:hover {
+    [class^=channelNotice] {
+
+      [class^=stageIcon],
+      [class*=liveNowText] {
+        display: block;
+      }
+    }
+
+    [aria-label="Total Duration"] {
+      display: flex !important;
+    }
+
+    .vc-spotify-time-left {
+      left: 6px;
+    }
+  }
+
+  .vc-spotify-button-row {
+    overflow: hidden;
+  }
+}
+
+/* spotify */
+.vc-spotify-time-left {
+  left: 0;
+}
+
+#vc-spotify-info-wrapper img {
+  max-width: 100%;
+}
+
+/* rounding fixes */
+[class^=members],
+[class^='messagesWrapper_'] [class^=scroller_],
+[class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
+[class^='nowPlayingColumn_']>[class^='container_'],
+[class^=chatContent_] {
+  border-radius: var(--panel-roundness);
+}
+
+ul {
+  [class^='footer'] {
+    background: none;
+    margin-top: unset;
+  }
+
+  [class^='gradient'] {
+    background: var(--bg-overlay-app-frame, var(--background-tertiary))
+  }
+}
+
+[class^='animatedContainer_'],
+[class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'] {
+  border-radius: var(--panel-roundness) var(--panel-roundness) 0 0 !important;
+}
+
+[class^='nowPlayingColumn_'] [class^='scroller_'] {
+  border-left: 0;
+  margin-left: 0;
+}
+
+[class^='sidebar_'] [class^='scroller_'] {
+  border-radius: 0 0 var(--panel-roundness) var(--panel-roundness) !important;
+}

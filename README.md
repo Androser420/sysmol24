@@ -120,10 +120,15 @@
 ---
 
 ### Modules
-You can now spice up your flavor with add-ons inside the `/theme/modules` folder!  
+Spice up your flavor with add-ons inside the `/theme/modules` folder!  
 If you've picked one you like, simply insert them using QuickCSS.  
-- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/auto-collapsible.css');`  
+- e.g. `@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/chat-indicators.css');`  
     *(or just install it through the link itself)*
+
+---
+
+### 3rd Party Fixes
+Head over to the `/third-party` folder if you need further compatibility with some themes or plugins!
 
 ## Credits
 > [system24](https://github.com/refact0r/system24) - original theme on which sysmol24 is based  

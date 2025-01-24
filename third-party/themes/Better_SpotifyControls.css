@@ -1,0 +1,10 @@
+/* https://discord-themes.com/api/108 */
+
+/* rounding fix */
+#vc-spotify-player::after {
+  border-radius: var(--panel-roundness) var(--panel-roundness) 0 0 !important;
+}
+
+:has([class*='connection_']) #vc-spotify-player::after {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,16 @@
+html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
+  [class^=linkTop] {
+    [class^=sidebar]:not(:hover) & [role=img] {
+      display: none
+    }
+  }
+}
+
+/* correct footer buttons' color */
+[class^='circleIconButton_'] {
+  background-color: var(--bg-1);
+
+  &[class*='selected_'] {
+    color: var(--white);
+  }
+}

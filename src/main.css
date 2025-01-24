@@ -1,16 +1,16 @@
 @import url('https://refact0r.github.io/system24/src/main.css');
-@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/classes/updated-classes.css');
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/classes/base.css');
 
 :root {
   --corner-text: 'sysmol24';
 
   /* Smol config */
-  --member-list-width: 244px;
+  --member-list-width: var(--sidebar-width);
   --sidebar-width: 240px;
   --profile-width: 340px;
   --profile-padding: 8px;
   --collapsed-sidebar-width: 64px;
-  --collapsed-member-list-width: 64px;
+  --collapsed-member-list-width: var(--collapsed-sidebar-width);
   --collapsed-profile-width: calc(var(--profile-width) / 2.25);
   --collapse-transition: 0.25s ease;
 }
@@ -34,64 +34,28 @@
     }
   }
 
-  [type*="button"],
-  [aria-label="Total Duration"],
-  .vc-spotify-button-row {
+  button,
+  [aria-label="Total Duration"] {
     display: none !important;
   }
 }
 
 /* sidebar */
 html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
-  width: var(--collapsed-sidebar-width) !important;
   transition: width var(--collapse-transition);
 
-  &:hover {
-    width: var(--sidebar-width) !important;
-
-    [type*="button"],
-    [id='vc-spotify-progress-bar'] [class^='bar_'],
-    [aria-label="Total Duration"],
-    .vc-spotify-button-row {
-      display: flex !important;
-    }
-
-    [class*="avatarWrapper_"]>[class*="avatar_"],
-    [id='vc-spotify-progress-bar'] [aria-label="Progress"] {
-      margin: auto;
-    }
-
-    .vc-spotify-time-left {
-      left: 6px;
-    }
-
-    /* fix event tab */
-    [class^=channelNotice] {
-
-      [class^=stageIcon],
-      [class*=liveNowText] {
-        display: block;
-      }
-    }
-  }
-
   &:not(:hover) {
+    width: var(--collapsed-sidebar-width) !important;
+
     [class^='avatarWrapper_'] {
       overflow: hidden;
       padding: 8px;
-      /* should be 0 but isnt cuz of avatar decorations */
       margin: 0;
-
-      >[class*='avatar_'] {
-        margin: 0;
-      }
     }
 
-    [class^='panels_'] {
-      [class^='container_'] {
-        padding: 0 !important;
-        place-content: center;
-      }
+    [class^='panels_']>[class^='container_'] {
+      padding: 0 !important;
+      place-content: center;
     }
 
     [class^='nameTag_'] {
@@ -99,30 +63,17 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     }
   }
 
-  [class^='nav_'],
-  [class^='header_'],
-  .vc-spotify-button-row {
-    overflow: hidden;
+  &:hover {
+    width: var(--sidebar-width);
+
+    [class^='panels_'] button {
+      display: flex !important;
+    }
   }
 
-  [class^=linkTop] {
-    display: flex;
-    flex-direction: row-reverse;
-
-    [class^='channelInfo_'],
-    [class^='iconItem_'] {
-      margin-right: 8px;
-      margin-left: 0;
-    }
-
-    [class^='children_'],
-    [class^='iconContainer_'] {
-      order: -1;
-    }
-
-    [class^=sidebar]:not(:hover) & [role=img] {
-      display: none
-    }
+  [class^='nav_'],
+  [class^='header_'] {
+    overflow: hidden;
   }
 
   [class^=channelNotice] {
@@ -156,9 +107,18 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     transition: width var(--collapse-transition);
   }
 
-  &:hover,
+  &:hover {
+    width: calc(var(--member-list-width) + 4px);
+  }
+
   >[class^=members_]:hover {
-    width: var(--member-list-width);
+    &:first-child {
+      width: calc(var(--member-list-width) + 4px);
+    }
+
+    &:nth-child(2) {
+      width: var(--member-list-width);
+    }
   }
 }
 
@@ -173,69 +133,4 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   &:hover {
     width: var(--profile-width);
   }
-}
-
-/* footer buttons */
-[class^='circleIconButton_'] {
-  background-color: var(--bg-1);
-
-  &[class*='selected_'] {
-    color: var(--white);
-  }
-}
-
-/* rounding fixes */
-[class^=members],
-[class^='messagesWrapper_'] [class^=scroller_],
-[class^='content_'] [class^='wrapper_'] [class^='callContainer_'],
-[class^='nowPlayingColumn_']>[class^='container_'],
-[class^=chatContent_] {
-  border-radius: var(--panel-roundness);
-}
-
-ul {
-  [class^='footer'] {
-    background: none;
-    margin-top: unset;
-  }
-
-  [class^='gradient'] {
-    background: var(--bg-overlay-app-frame, var(--background-tertiary))
-  }
-}
-
-[class^='animatedContainer_'],
-[class^='channelTextArea_'] [class^='floatingBars_'] [class^='banner_'],
-#vc-spotify-player::after {
-  border-radius: var(--panel-roundness) var(--panel-roundness) 0 0 !important;
-}
-
-:has([class*='connection_']) #vc-spotify-player::after {
-  border-radius: 0 !important;
-}
-
-[class^='nowPlayingColumn_'] [class^='scroller_'] {
-  border-left: 0;
-  margin-left: 0;
-}
-
-[class^='sidebar_'] [class^='scroller_'] {
-  border-radius: 0 0 var(--panel-roundness) var(--panel-roundness) !important;
-}
-
-/* misc changes for system24 */
-.vc-spotify-time-left,
-.vc-spotify-time-right {
-  z-index: 1;
-  top: 4px;
-  mix-blend-mode: difference;
-  font-size: 14px;
-}
-
-.vc-spotify-time-left {
-  left: 0;
-}
-
-#vc-spotify-info-wrapper img {
-  max-width: 100%;
 }

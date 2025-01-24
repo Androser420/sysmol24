@@ -1,0 +1,37 @@
+/* https://github.com/DiscordStyles/HorizontalServerList */
+/* NOTE: pretty bad implementation, expect stuff to break (e.g. changing --pad variable or server list label) */
+
+:root {
+  --server-top: 64px;
+}
+
+#app-mount {
+  [class*='guilds_'] {
+    padding-top: unset;
+    max-height: calc(100vw - 2.25 * var(--pad));
+    top: var(--server-top);
+
+    &:after {
+      right: 6px;
+      transform-origin: bottom right;
+      transform: rotate(90deg);
+      top: 28px;
+      place-self: end;
+    }
+
+    [class^='footer_'] {
+      padding-bottom: var(--server-spacing);
+    }
+  }
+
+  [class^='tutorialContainer_'] [class^=pill_] {
+    transform: unset;
+    top: 0 !important;
+    margin-left: -10px;
+  }
+
+  [class^='app_'] [class^='base_'] {
+    top: calc(var(--server-top) + var(--pad)) !important;
+    margin: var(--pad);
+  }
+}

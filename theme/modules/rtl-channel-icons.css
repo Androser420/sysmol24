@@ -1,0 +1,20 @@
+/**
+ * @name RTL channel icons | sysmol24
+ * @description a module that moves channel icons to the right instead of the default left.
+*/
+
+[class^=linkTop] {
+  display: flex;
+  flex-direction: row-reverse;
+
+  [class^='channelInfo_'],
+  [class^='iconItem_'] {
+    margin-right: 8px;
+    margin-left: 0;
+  }
+
+  [class^='children_'],
+  [class^='iconContainer_'] {
+    order: -1;
+  }
+}

@@ -10,8 +10,9 @@
 /* flavors */
 @import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/main.css');
 
-/* modules */
-@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/theme/modules/indirect-fixes.css');
+/* changes */
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/fixes/indirect.css');
+@import url('https://raw.githubusercontent.com/Androser420/sysmol24/refs/heads/main/src/classes/theme-specific-changes.css');
 
 /* customize things here */
 :root {

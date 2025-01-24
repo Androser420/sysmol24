@@ -1,0 +1,7 @@
+[class*=guilds_]:only-child {
+  margin: var(--pad) 0;
+
+  &::after {
+    content: "folders";
+  }
+}

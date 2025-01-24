@@ -1,8 +1,3 @@
-/**
- * @name indirect fixes | sysmol24
- * @description various workaround fixes for sysmol24.
-*/
-
 /* fix panel labels */
 [class^='sidebar_']>[class^='container_'],
 .container_fc4f04,
@@ -23,6 +18,20 @@
     text-overflow: ellipsis;
     max-width: fit-content;
     right: 6px;
+  }
+}
+
+/* fix spotify listen along */
+[class^='listeningAlong_'] {
+  border-top: 0;
+  border-bottom: var(--border-width) solid var(--border-color);
+  overflow: hidden;
+
+  [class*='party_'] {
+    order: -1;
+    margin-left: 0;
+    justify-content: center;
+    margin-right: var(--txt-pad);
   }
 }
 

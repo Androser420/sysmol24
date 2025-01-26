@@ -1,3 +1,27 @@
+:root {
+  --tooltip-text-color: var(--txt-1);
+  --tooltip-color: var(--bg-0);
+  --grey-tooltip-color: var(--bg-1);
+}
+
+/* fix tooltips */
+[class^='tooltip_'] {
+  background-color: var(--tooltip-color);
+  color: var(--tooltip-text-color);
+
+  >[class^='tooltipPointer_'] {
+    border-top-color: var(--tooltip-color);
+  }
+}
+
+[class*='tooltipGrey_'] {
+  background-color: var(--grey-tooltip-color);
+
+  >[class^='tooltipPointer_'] {
+    border-top-color: var(--grey-tooltip-color);
+  }
+}
+
 html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
   &:hover {
     [class^=channelNotice] {
@@ -16,10 +40,11 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
       left: 6px;
     }
   }
+}
 
-  .vc-spotify-button-row {
-    overflow: hidden;
-  }
+.vc-spotify-button-row,
+.whosWatching-spectators_panel>:first-child {
+  overflow: hidden;
 }
 
 /* spotify */

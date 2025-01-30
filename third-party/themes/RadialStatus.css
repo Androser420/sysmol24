@@ -1,0 +1,15 @@
+/* https://github.com/DiscordStyles/RadialStatus */
+/* NOTE: support made for unrounding.css */
+
+.wrapper__44b0c:has(rect)::after {
+  display: none;
+}
+
+[class^='mask_'] {
+
+  >rect,
+  >circle,
+  >svg {
+    display: block;
+  }
+}

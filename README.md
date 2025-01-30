@@ -132,7 +132,7 @@ Head over to the `/third-party` folder if you need further compatibility with so
 
 ## Credits
 > [system24](https://github.com/refact0r/system24) - original theme on which sysmol24 is based  
-> [Smol](https://themes-delta.vercel.app/api/Smol) - theme that makes discord collapsible
+> [Smol](https://discord-themes.com/api/116) - theme that makes discord collapsible
 
 ---
 

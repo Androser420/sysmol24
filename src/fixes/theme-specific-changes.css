@@ -14,3 +14,24 @@ html:not(.visual-refresh) [class^='sidebar_']:not([class^='hidden']) {
     color: var(--white);
   }
 }
+
+/* send message button */
+.separator_aa63ab {
+  background-color: var(--border-color);
+  width: var(--border-width);
+  height: 100%;
+}
+
+.activeButtonChild_aa63ab {
+  color: var(--interactive-normal);
+  transition: none;
+}
+
+.button_aa63ab {
+
+  &:hover .activeButtonChild_aa63ab,
+  &:focus .activeButtonChild_aa63ab,
+  &:focus-within .activeButtonChild_aa63ab {
+    color: var(--interactive-hover) !important;
+  }
+}

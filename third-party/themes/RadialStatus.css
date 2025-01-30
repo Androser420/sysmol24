@@ -1,6 +1,10 @@
 /* https://github.com/DiscordStyles/RadialStatus */
 /* NOTE: support made for unrounding.css */
 
+:root {
+  --rs-avatar-shape: 0;
+}
+
 .wrapper__44b0c:has(rect)::after {
   display: none;
 }

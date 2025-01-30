@@ -1,16 +1,16 @@
 /* fix panel labels */
 [class^='sidebar_']>[class^='container_'],
-.container_fc4f04,
+.container__9293f,
 [class^='chatContent_']>[class^='messagesWrapper_'],
 [class^='panels_'],
 [class^='form_'] [class^='channelTextArea_'],
-.guilds_a4d4d9,
+.guilds_c48ade,
 [class^='membersWrap_'],
 [class^='privateChannels_'],
-.container_a6d69a,
+.container_f369db,
 [class^='content_']>[class^='outer_'],
 [class^='searchResultsWrap_'],
-.scroller_fb4810,
+.scroller_fb64c9,
 [class^='peopleColumn_'],
 [class^='nowPlayingColumn_'] {
   &::after {

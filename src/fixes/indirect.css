@@ -193,5 +193,6 @@
 
   >:first-child {
     color: var(--txt-2) !important;
+    font-weight: var(--label-font-weight);
   }
 }

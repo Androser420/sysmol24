@@ -151,8 +151,12 @@ html.theme-light {
       transition: height var(--collapse-transition);
     }
 
-    .badgeContainer_d60c6d {
+    .badgeContainer__635ed {
       overflow: visible !important;
     }
   }
+}
+
+.chatHeaderBar_dc83f5>:first-child::before {
+  content: "⚠️ ";
 }

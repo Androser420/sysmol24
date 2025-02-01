@@ -178,3 +178,20 @@
     }
   }
 }
+
+/* "This channel is not on your channel list." */
+.chatHeaderBar_dc83f5 {
+  padding: var(--txt-pad);
+  margin-bottom: var(--pad);
+  border-radius: var(--panel-roundness);
+  border: var(--border-width) solid var(--border-color);
+  transition: border-color var(--border-transition);
+
+  &:hover {
+    border-color: var(--border-hover-color);
+  }
+
+  >:first-child {
+    color: var(--txt-2) !important;
+  }
+}

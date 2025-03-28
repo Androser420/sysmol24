@@ -1,5 +1,5 @@
 > [!WARNING]  
-> Due to recent Discord UI changes I've decided to pause development this very miniscule theme, if you'd really like me to continue it, send me a dm at @smg8 and I'll think about rewriting it.
+> Due to recent Discord UI changes I've decided to pause development for this very miniscule theme, if you'd really like me to continue it, send me a dm at @smg8 and I'll think about rewriting it.
 
 ![preview](/assets/sysmol24.png)
 

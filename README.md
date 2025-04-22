@@ -1,5 +1,7 @@
-> [!WARNING]  
-> Due to recent Discord UI changes I've decided to pause development for this very miniscule theme, if you'd really like me to continue it, send me a dm at @smg8 and I'll think about rewriting it.
+> [!IMPORTANT]  
+> This project has been abandoned! Discord fully rolled out the new UI which also adds the ability to resize the sidebar, making this theme kinda pointless now.  
+I will be adding some of the features from here to my own [system24 rewrite](https://github.com/Androser420/system24-rewrite) I've been working on recently.  
+You can also use the original theme now as refact0r has started working on it too.
 
 ![preview](/assets/sysmol24.png)
 
@@ -135,8 +137,8 @@ Head over to the `/third-party` folder if you need further compatibility with so
 
 ## Credits
 > [system24](https://github.com/refact0r/system24) - original theme on which sysmol24 is based  
-> [Smol](https://discord-themes.com/api/116) - theme that makes discord collapsible
+> [Smol](https://discord-themes.com/api/100) - theme that makes discord collapsible
 
 ---
 
-- ###### More to come, suggestions and pull requests are very appreciated!
+- ###### ~~More to come, suggestions and pull requests are very appreciated!~~
